@@ -1,0 +1,973 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Job</title>
+<link href="css/jquery.formstyler.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.formstyler.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.tinycarousel.js"></script>
+<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+<script>(function($) { $(function() { $('input, select').styler(); }) })(jQuery)</script>
+<script>
+	function popular(id)
+	{
+		pp = document.getElementsByClassName('popular_most');
+		for(i = 0; i < pp.length; i++)
+		{
+			pp[i].style.display = 'none';
+		}
+		p = document.getElementById('popular_most'+id);
+		a = document.getElementById('popular_most_arrow'+id);
+		p.style.display = 'block';
+		a.style.left = 88+256*((id-1)%3)+'px';
+	}
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="container">
+        <div id="pop_up_shell">
+            <div class="column">
+            <div id="pop_up">
+                <div id="p_order_rating">
+							<div id="p_order_rating_title">
+								<span>Заявка на расчет</span>
+							</div>
+							<div id="p_order_rating_order">
+								<p>Оставьте заявку на бесплатный расчет проекта <span class="rating_now">сейчас</span> и Вы получите точную смету в течении 24 часов</p>
+								<form action="#">
+									<input type="text" name="order_rating_number" class="rating_input" placeholder="Введите номер телефона">
+									<input type="submit" class="rating_submit" value="Отправить заявку">
+								</form>
+							</div>
+						</div>
+            <div class="clear"></div>
+            </div>
+            </div>
+        </div>
+        <div id="thanks_shell">
+            <div class="column">
+            <div id="thanks">
+                <div id="thanks_order_rating">
+							<div id="thanks_order_rating_title">
+								<span>Заявка на расчет</span>
+							</div>
+							<div id="thanks_order_rating_order">
+								<p>Оставьте заявку на бесплатный расчет проекта <span class="rating_now">сейчас</span> и Вы получите точную смету в течении 24 часов</p>
+								<form action="#">
+									<input type="text" name="order_rating_number" class="rating_input" placeholder="Введите номер телефона">
+									<input type="submit" class="rating_submit" value="Отправить заявку">
+								</form>
+							</div>
+						</div>
+            <div class="clear"></div>
+            </div>
+            </div>
+        </div>
+		<div id="nav" class="section">
+			<div id="nav_column" class="column">
+				<ul class="nav">
+					<li><a href="#wrapper" class="scroll">ГЛАВНАЯ</a></li>
+					<li><a href="#our_uslugi" class="scroll">НАШИ УСЛУГИ</a></li>
+					<li><a href="#our_recommend" class="scroll">НАС РЕКОМЕНДУЮТ</a></li>
+					<li><a href="#our_project" class="scroll">ПРОЕКТЫ</a></li>
+					<li><a href="#our_works" class="scroll">НАШИ РАБОТЫ</a></li>
+					<li class="last"><a href="#contacts" class="scroll">КОНТАКТЫ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="header" class="section">
+			<div id="header_b" class="section">
+				<div id="header_column" class="column">
+					<div id="header_logo">
+						<a href="#"><img src="img/bg_logo.png" alt="SibComfort"></a>
+					</div>
+					<div id="header_call">
+						<p><img src="img/ico_phone.png" alt="Заказать звонок"> <span class="call_code">+7 (800)</span> <span class="call_number">112-43-67</span> <a href="#" id="header_order_call" class="button popup">Заказать звонок</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main" class="section">
+			<div id="main_b" class="section">
+				<div id="main_strip1" class="main_strip"></div>
+				<div id="main_strip2" class="main_strip"></div>
+				<div id="main_strip3" class="main_strip"></div>
+				<div id="main_column" class="column">
+					<div id="main_top" class="column">
+						<div id="main_title">
+							<h1>СТРОИТЕЛЬСТВО ДОМОВ ИЗ БРУСА И БРЕВНА В КРАСНОЯРСКОМ КРАЕ!</h1>
+						</div>
+						<div id="main_action">
+							<p><span class="main_action">Акция!</span> Установка 3-х окон бесплатно!</p>
+						</div>
+					</div>
+					<div id="main_bottom">
+						<div id="main_stat">
+							<div id="main_stat_count" class="main_stat">
+								<p><span class="main_stat_digit">118</span> построенных объектов</p>
+							</div>
+							<div id="main_stat_area" class="main_stat">
+								<p><span class="main_stat_digit">4248</span> кв.м. нами застроено</p>
+							</div>
+							<div id="main_stat_years" class="main_stat">
+								<p><span class="main_stat_digit">5</span> лет работы</p>
+							</div>
+						</div>
+						<div id="main_rating">
+							<div id="main_rating_title">
+								<span>Заявка на расчет</span>
+							</div>
+							<div id="main_rating_order">
+								<p>Оставьте заявку на бесплатный расчет проекта <span class="rating_now">сейчас</span> и Вы получите точную смету в течении 24 часов</p>
+								<form action="#">
+									<input type="text" name="main_rating_name" class="rating_input" placeholder="Введите ваше имя">
+									<input type="text" name="main_rating_number" class="rating_input" placeholder="Введите номер телефона">
+									<input type="submit" class="rating_submit" value="Отправить заявку">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="products" class="section">
+            <a id="our_uslugi" class="anchor"></a>
+			<div id="products_b" class="section">
+				<div id="products_column" class="column">
+					<div id="products_title">
+						<h2>СИБ-КОМФОРТ УЖЕ БОЛЕЕ 5 ЛЕТ ЗАНИМАЕТСЯ СТРОИТЕЛЬСТВОМ</h2>
+					</div>
+					<div id="products_items">
+						<div id="products_item1" class="products_item">
+							<div id="products_image1" class="products_image">
+								<img src="img/ico_prod1.png" alt="Дома из профилированного бруса">
+							</div>
+							<div id="products_name1" class="products_name">
+								<p>Домов из профилированного бруса</p>
+							</div>
+						</div>
+						<div id="products_item2" class="products_item">
+							<div id="products_image2" class="products_image">
+								<img src="img/ico_prod2.png" alt="Дом из оцилиндрованного бруса">
+							</div>
+							<div id="products_name2" class="products_name">
+								<p>Домов из оцилиндрованного бруса</p>
+							</div>
+						</div>
+						<div id="products_item3" class="products_item">
+							<div id="products_image3" class="products_image">
+								<img src="img/ico_prod3.png" alt="Дома из клееного руса">
+							</div>
+							<div id="products_name3" class="products_name">
+								<p>Домов из клеенного бруса</p>
+							</div>
+						</div>
+						<div id="products_item4" class="products_item">
+							<div id="products_image4" class="products_image">
+								<img src="img/ico_prod4.png" alt="Каркасные дома">
+							</div>
+							<div id="products_name4" class="products_name">
+								<p>Каркасных домов</p>
+							</div>
+						</div>
+						<div id="products_item5" class="products_item">
+							<div id="products_image5" class="products_image">
+								<img src="img/ico_prod5.png" alt="Бани">
+							</div>
+							<div id="products_name5" class="products_name">
+								<p>Бань</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="advantages" class="section">
+            <a id="our_recommend" class="anchor"></a>
+			<div id="advantages_column" class="column">
+				<div id="advantages_title">
+					<h2>ПОЧЕМУ НАШИ КЛИЕНТЫ РЕКОМЕНДУЮТ НАС?</h2>
+				</div>
+				<div id="advantages_items">
+					<div id="advantage1" class="advantage advantage_l">
+						<div id="advantage_number1" class="advantage_number">
+							<span>1</span>
+						</div>
+						<div id="advantage_title1" class="advantage_title">
+							<p>Сдаем проект всегда в срок (вернем деньги за срыв сроков)</p>
+						</div>
+					</div>
+					<div id="advantage2" class="advantage advantage_l">
+						<div id="advantage_number2" class="advantage_number">
+							<span>2</span>
+						</div>
+						<div id="advantage_title2" class="advantage_title">
+							<p>Работают только русские опытные мастера</p>
+						</div>
+					</div>
+					<div id="advantage3" class="advantage advantage_l">
+						<div id="advantage_number3" class="advantage_number">
+							<span>3</span>
+						</div>
+						<div id="advantage_title3" class="advantage_title">
+							<p>Оставляем за собой порядок</p>
+						</div>
+					</div>
+					<div id="advantage4" class="advantage advantage_r">
+						<div id="advantage_number4" class="advantage_number">
+							<span>4</span>
+						</div>
+						<div id="advantage_title4" class="advantage_title">
+							<p>Никаких дополнительных расходов (прописано в договоре)</p>
+						</div>
+					</div>
+					<div id="advantage5" class="advantage advantage_r">
+						<div id="advantage_number5" class="advantage_number">
+							<span>5</span>
+						</div>
+						<div id="advantage_title5" class="advantage_title">
+							<p>Даем гарантию на дом (подтверждено договором)</p>
+						</div>
+					</div>
+					<div id="advantage6" class="advantage advantage_r">
+						<div id="advantage_number6" class="advantage_number">
+							<span>6</span>
+						</div>
+						<div id="advantage_title6" class="advantage_title">
+							<p>Только качественные материалы, проходят жесткий контроль</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="popular" class="section">
+            <a id="our_project" class="anchor"></a>
+			<div id="popular_t" class="section">
+				<div id="popular_column" class="column">
+					<div id="popular_title">
+						<h2>САМЫЕ ПОПУЛЯРНЫЕ ПРОЕКТЫ</h2>
+					</div>
+					<div id="popular_items">
+						<div id="popular_list">
+							<div id="popular_item1" class="popular_item">
+								<div id="popular_item_image1" class="popular_item_image">
+									<img src="img_popular_item.jpg" alt="Дом 6x6">
+								</div>
+								<div id="popular_item_title1" class="popular_item_title">
+									<span>Дом 6x6</span>
+								</div>
+								<div id="popular_item_price1" class="popular_item_price">
+									<span>от 450 000 руб</span>
+								</div>
+								<div id="popular_item_more1" class="popular_item_more">
+									<a class="button" onclick="popular(1)">Подробнее</a>
+								</div>
+							</div>
+							<div id="popular_item2" class="popular_item">
+								<div id="popular_item_image2" class="popular_item_image">
+									<img src="img_popular_item.jpg" alt="Дом 6x6">
+								</div>
+								<div id="popular_item_title2" class="popular_item_title">
+									<span>Дом 6x6</span>
+								</div>
+								<div id="popular_item_price2" class="popular_item_price">
+									<span>от 450 000 руб</span>
+								</div>
+								<div id="popular_item_more2" class="popular_item_more">
+									<a class="button" onclick="popular(2)">Подробнее</a>
+								</div>
+							</div>
+							<div id="popular_item3" class="popular_item">
+								<div id="popular_item_image3" class="popular_item_image">
+									<img src="img_popular_item.jpg" alt="Дом 6x6">
+								</div>
+								<div id="popular_item_title3" class="popular_item_title">
+									<span>Дом 6x6</span>
+								</div>
+								<div id="popular_item_price3" class="popular_item_price">
+									<span>от 450 000 руб</span>
+								</div>
+								<div id="popular_item_more3" class="popular_item_more">
+									<a class="button" onclick="popular(3)">Подробнее</a>
+								</div>
+							</div>
+							<div class="popular_item last">
+								<a href="#" class="popup">Смотреть все проекты</a>
+							</div>
+							<div class="clear"></div>
+							<div id="popular_most1" class="popular_most" style="display:none;">
+								<div id="popular_most_arrow1" class="popular_most_arrow"></div>
+								<div class="popular_most_container">
+									<div class="popular_most_images">
+										<div class="popular_most_image">
+											<img src="img_popular_most.jpg" alt="Проект Д1">
+										</div>
+										<div id="slider1" class="popular_most_gallery slider">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+            <ul class="overview">
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+            </ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+										</div>
+									</div>
+									<div class="popular_most_decription">
+										<div class="popular_most_title">
+											<span>Проект Д1</span>
+										</div>
+										<div class="popular_most_info">							
+											<ul>
+												<li><span>Размер дома: 6*6</span></li>
+												<li><span>Общая площадь дома: 44 кв.м.</span></li>
+												<li><span>Материал стен: Брус</span></li>
+												<li><span>Фундамент: свайно-винтовой или ленточный</span></li>
+												<li><span>Количество этажей: 2</span></li>
+												<li><span>Высота этажей:<br>1-й этаж — 2,4 м; 2-й этаж — 2,3 м</span></li>
+												<li><span>Количество жилых комнат: 2</span></li>
+											</ul>
+										</div>
+										<div class="popular_most_price">
+											<span>от 500 тыс. руб.</span>
+										</div>
+										<div class="popular_most_buttons">
+											<a href="#" id="popular_order" class="button">Заказать рассчёт</a>
+											<a href="#" id="popular_more" class="button button_grey">Подробнее</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="popular_most2" class="popular_most" style="display:none;">
+								<div id="popular_most_arrow2" class="popular_most_arrow"></div>
+								<div class="popular_most_container">
+									<div class="popular_most_images">
+										<div class="popular_most_image">
+											<img src="img_popular_most.jpg" alt="Проект Д1">
+										</div>
+										<div id="slider2" class="popular_most_gallery slider">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+            <ul class="overview">
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+            </ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+										</div>
+									</div>
+									<div class="popular_most_decription">
+										<div class="popular_most_title">
+											<span>Проект Д2</span>
+										</div>
+										<div class="popular_most_info">							
+											<ul>
+												<li><span>Размер дома: 6*6</span></li>
+												<li><span>Общая площадь дома: 44 кв.м.</span></li>
+												<li><span>Материал стен: Брус</span></li>
+												<li><span>Фундамент: свайно-винтовой или ленточный</span></li>
+												<li><span>Количество этажей: 2</span></li>
+												<li><span>Высота этажей:<br>1-й этаж — 2,4 м; 2-й этаж — 2,3 м</span></li>
+												<li><span>Количество жилых комнат: 2</span></li>
+											</ul>
+										</div>
+										<div class="popular_most_price">
+											<span>от 500 тыс. руб.</span>
+										</div>
+										<div class="popular_most_buttons">
+											<a href="#" id="popular_order" class="button">Заказать рассчёт</a>
+											<a href="#" id="popular_more" class="button button_grey">Подробнее</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="popular_most3" class="popular_most" style="display:none;">
+								<div id="popular_most_arrow3" class="popular_most_arrow"></div>
+								<div class="popular_most_container">
+									<div class="popular_most_images">
+										<div class="popular_most_image">
+											<img src="img_popular_most.jpg" alt="Проект Д1">
+										</div>
+										<div id="slider3" class="popular_most_gallery slider">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+            <ul class="overview">
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+            </ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+										</div>
+									</div>
+									<div class="popular_most_decription">
+										<div class="popular_most_title">
+											<span>Проект Д3</span>
+										</div>
+										<div class="popular_most_info">							
+											<ul>
+												<li><span>Размер дома: 6*6</span></li>
+												<li><span>Общая площадь дома: 44 кв.м.</span></li>
+												<li><span>Материал стен: Брус</span></li>
+												<li><span>Фундамент: свайно-винтовой или ленточный</span></li>
+												<li><span>Количество этажей: 2</span></li>
+												<li><span>Высота этажей:<br>1-й этаж — 2,4 м; 2-й этаж — 2,3 м</span></li>
+												<li><span>Количество жилых комнат: 2</span></li>
+											</ul>
+										</div>
+										<div class="popular_most_price">
+											<span>от 500 тыс. руб.</span>
+										</div>
+										<div class="popular_most_buttons">
+											<a href="#" id="popular_order" class="button">Заказать рассчёт</a>
+											<a href="#" id="popular_more" class="button button_grey">Подробнее</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="popular_item4" class="popular_item">
+								<div id="popular_item_image4" class="popular_item_image">
+									<img src="img_popular_item.jpg" alt="Дом 6x6">
+								</div>
+								<div id="popular_item_title4" class="popular_item_title">
+									<span>Дом 6x6</span>
+								</div>
+								<div id="popular_item_price4" class="popular_item_price">
+									<span>от 450 000 руб</span>
+								</div>
+								<div id="popular_item_more4" class="popular_item_more">
+									<a class="button" onclick="popular(4)">Подробнее</a>
+								</div>
+							</div>
+							<div id="popular_item5" class="popular_item">
+								<div id="popular_item_image5" class="popular_item_image">
+									<img src="img_popular_item.jpg" alt="Дом 6x6">
+								</div>
+								<div id="popular_item_title5" class="popular_item_title">
+									<span>Дом 6x6</span>
+								</div>
+								<div id="popular_item_price5" class="popular_item_price">
+									<span>от 450 000 руб</span>
+								</div>
+								<div id="popular_item_more5" class="popular_item_more">
+									<a class="button" onclick="popular(5)">Подробнее</a>
+								</div>
+							</div>
+							<div id="popular_item6" class="popular_item">
+								<div id="popular_item_image6" class="popular_item_image">
+									<img src="img_popular_item.jpg" alt="Дом 6x6">
+								</div>
+								<div id="popular_item_title6" class="popular_item_title">
+									<span>Дом 6x6</span>
+								</div>
+								<div id="popular_item_price6" class="popular_item_price">
+									<span>от 450 000 руб</span>
+								</div>
+								<div id="popular_item_more6" class="popular_item_more">
+									<a class="button" onclick="popular(6)">Подробнее</a>
+								</div>
+							</div>
+							<div class="popular_item last">
+								<a href="#" class="popup">Смотреть все проекты</a>
+							</div>
+							<div class="clear"></div>
+							<div id="popular_most4" class="popular_most" style="display:none;">
+								<div id="popular_most_arrow4" class="popular_most_arrow"></div>
+								<div class="popular_most_container">
+									<div class="popular_most_images">
+										<div class="popular_most_image">
+											<img src="img_popular_most.jpg" alt="Проект Д4">
+										</div>
+										<div id="slider4" class="popular_most_gallery slider">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+            <ul class="overview">
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+            </ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+										</div>
+									</div>
+									<div class="popular_most_decription">
+										<div class="popular_most_title">
+											<span>Проект Д4</span>
+										</div>
+										<div class="popular_most_info">							
+											<ul>
+												<li><span>Размер дома: 6*6</span></li>
+												<li><span>Общая площадь дома: 44 кв.м.</span></li>
+												<li><span>Материал стен: Брус</span></li>
+												<li><span>Фундамент: свайно-винтовой или ленточный</span></li>
+												<li><span>Количество этажей: 2</span></li>
+												<li><span>Высота этажей:<br>1-й этаж — 2,4 м; 2-й этаж — 2,3 м</span></li>
+												<li><span>Количество жилых комнат: 2</span></li>
+											</ul>
+										</div>
+										<div class="popular_most_price">
+											<span>от 500 тыс. руб.</span>
+										</div>
+										<div class="popular_most_buttons">
+											<a href="#" id="popular_order" class="button popup">Заказать рассчёт</a>
+											<a href="#" id="popular_more" class="button button_grey">Подробнее</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="popular_most5" class="popular_most" style="display:none;">
+								<div id="popular_most_arrow5" class="popular_most_arrow"></div>
+								<div class="popular_most_container">
+									<div class="popular_most_images">
+										<div class="popular_most_image">
+											<img src="img_popular_most.jpg" alt="Проект Д4">
+										</div>
+										<div id="slider5" class="popular_most_gallery slider">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+            <ul class="overview">
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+            </ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+										</div>
+									</div>
+									<div class="popular_most_decription">
+										<div class="popular_most_title">
+											<span>Проект Д5</span>
+										</div>
+										<div class="popular_most_info">							
+											<ul>
+												<li><span>Размер дома: 6*6</span></li>
+												<li><span>Общая площадь дома: 44 кв.м.</span></li>
+												<li><span>Материал стен: Брус</span></li>
+												<li><span>Фундамент: свайно-винтовой или ленточный</span></li>
+												<li><span>Количество этажей: 2</span></li>
+												<li><span>Высота этажей:<br>1-й этаж — 2,4 м; 2-й этаж — 2,3 м</span></li>
+												<li><span>Количество жилых комнат: 2</span></li>
+											</ul>
+										</div>
+										<div class="popular_most_price">
+											<span>от 500 тыс. руб.</span>
+										</div>
+										<div class="popular_most_buttons">
+											<a href="#" id="popular_order" class="button popup">Заказать рассчёт</a>
+											<a href="#" id="popular_more" class="button button_grey">Подробнее</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="popular_most6" class="popular_most" style="display:none;">
+								<div id="popular_most_arrow6" class="popular_most_arrow"></div>
+								<div class="popular_most_container">
+									<div class="popular_most_images">
+										<div class="popular_most_image">
+											<img src="img_popular_most.jpg" alt="Проект Д4">
+										</div>
+										<div id="slider6" class="popular_most_gallery slider">
+		<a class="buttons prev" href="#">&#60;</a>
+		<div class="viewport">
+            <ul class="overview">
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+											<li><div class="popular_most_gallery_item last">
+												<img src="img_popular_most_gallery.jpg" alt="Проект Д1">
+											</div></li>
+            </ul>
+		</div>
+		<a class="buttons next" href="#">&#62;</a>
+										</div>
+									</div>
+									<div class="popular_most_decription">
+										<div class="popular_most_title">
+											<span>Проект Д6</span>
+										</div>
+										<div class="popular_most_info">							
+											<ul>
+												<li><span>Размер дома: 6*6</span></li>
+												<li><span>Общая площадь дома: 44 кв.м.</span></li>
+												<li><span>Материал стен: Брус</span></li>
+												<li><span>Фундамент: свайно-винтовой или ленточный</span></li>
+												<li><span>Количество этажей: 2</span></li>
+												<li><span>Высота этажей:<br>1-й этаж — 2,4 м; 2-й этаж — 2,3 м</span></li>
+												<li><span>Количество жилых комнат: 2</span></li>
+											</ul>
+										</div>
+										<div class="popular_most_price">
+											<span>от 500 тыс. руб.</span>
+										</div>
+										<div class="popular_most_buttons">
+											<a href="#" id="popular_order" class="button popup">Заказать рассчёт</a>
+											<a href="#" id="popular_more" class="button button_grey">Подробнее</a>
+										</div>
+									</div>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="request" class="section">
+			<div id="request_t" class="section">
+				<div id="request_b" class="section">
+					<div id="request_column" class="column">
+						<div id="request_title">
+							<span>НУЖЕН ИНДИВИДУАЛЬНЫЙ ПРОЕКТ ИЛИ ПОЯВИЛИСЬ ВОПРОСЫ?</span>
+						</div>
+						<div id="request_info">
+							<span>ОСТАВЬТЕ ЗАЯВКУ НИЖЕ И НАШИ СПЕЦИАЛИСТЫ СВЯЖУТСЯ С <span class="you">В</span>АМИ!</span>
+						</div>
+						<div id="request_form">
+							<form action="#">
+								<input type="text" name="request_name" class="request_input" placeholder="Введите ваше имя">
+								<input type="text" name="request_number" class="request_input" placeholder="Введите номер телефона">
+								<input type="submit" value="Отправить" class="request_submit">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="selection" class="section">
+			<div id="selection_b" class="section">
+				<div id="selection_column" class="column">
+					<div id="selection_title">
+						<h2>ПОДБОР ИДЕАЛЬНОГО ПРОЕКТА</h2>
+					</div>
+					<div id="selection_form">
+					<form action="#">
+						<div id="selection_options">
+							<div id="selection_options_group1" class="selection_options_group">
+								<div id="selectio_group_title1" class="selectio_group_title">
+									<span>ТИП ПРОЕКТА</span>
+								</div>
+								<div id="selection_group_items1" class="selection_group_items">
+									<div id="selection_item1" class="selection_item">
+										<input id="type1" type="radio" name="type" value=1><label for="type1">Дом</label>
+									</div>
+									<div id="selection_item2" class="selection_item">
+										<input id="type2" type="radio" name="type" value=2><label for="type2">Баня</label>
+									</div>
+									<div id="selection_item3" class="selection_item">
+										<input id="type3" type="radio" name="type" value=3><label for="type3">Бытовка</label>
+									</div>
+									<div id="selection_item4" class="selection_item">
+										<input id="type4" type="radio" name="type" value=4><label for="type4">Беседка</label>
+									</div>
+								</div>
+							</div>
+							<div id="selection_options_group2" class="selection_options_group">
+								<div id="selectio_group_title2" class="selectio_group_title">
+									<span>ВИД БРУСА</span>
+								</div>
+								<div id="selection_group_items2" class="selection_group_items">
+									<div id="selection_item5" class="selection_item">
+										<input id="material1" type="radio" name="material" value=1><label for="material1">Оциллиндрованный</label>
+									</div>
+									<div id="selection_item6" class="selection_item">
+										<input id="material2" type="radio" name="material" value=2><label for="material2">Профилированный</label>
+									</div>
+									<div id="selection_item7" class="selection_item">
+										<input id="material3" type="radio" name="material" value=3><label for="material3">Клееный</label>
+									</div>
+									<div id="selection_item8" class="selection_item">
+										<input id="material4" type="radio" name="material" value=4><label for="material4">Не определился</label>
+									</div>
+								</div>
+							</div>
+							<div id="selection_options_group3" class="selection_options_group">
+								<div id="selectio_group_title3" class="selectio_group_title">
+									<span>ХАРАКТЕРИСТИКА</span>
+								</div>
+								<div id="selection_group_items3" class="selection_group_items">
+									<div id="selection_item9" class="selection_item">
+										<label for="max_cost">Цена до</label><input id="max_cost" type="text" class="selection_input selection_input_long">
+									</div>
+									<div id="selection_item10" class="selection_item">
+										<label for="min_area">Площадь от</label><input id="min_area" type="text" class="selection_input"><label for="max_area">до</label><input id="max_area" type="text" class="selection_input">
+									</div>
+									<div id="selection_item11" class="selection_item">
+										<label for="floors">Количество этажей</label><select id="floors" name="floors"><option value=1>1</option><option value=2>2</option><option value=3>3</option></select>
+									</div>
+									<div id="selection_item12" class="selection_item">
+										<label for="extension">Нужна пристройка?</label><select id="extension" name="extension"><option value=1>Нет</option><option value=2>Да</option></select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="selection_submit">
+							<a href="3" class="button button_selection popup">Подобрать проект</a>
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="examples" class="section">
+            <a id="our_works" class="anchor"></a>
+			<div id="examples_column" class="column">
+				<div id="examples_title">
+					<h2>ПРИМЕРЫ РАБОТ КОМПАНИИ СИБ-КОМФОРТ</h2>
+				</div>
+                <div class="example_one">
+				<div class="examples_items">
+					<div class="examples_items_group">
+						<a class="example_item examples_item1 gallery" data-fancybox-group="gallery1"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример1">
+						</a>
+						<a class="example_item examples_item2 gallery" data-fancybox-group="gallery1"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример2">
+						</a>
+						<a class="example_item examples_item3 gallery" data-fancybox-group="gallery1"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример3">
+						</a>
+						<a class="example_item examples_item4 gallery" data-fancybox-group="gallery1"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример4">
+						</a>
+					</div>
+				</div>
+				<div class="examples_review">
+					<div class="examples_review_from">
+						<span>г. Красноярск ул. Строителей д.6</span>
+					</div>
+					<div class="examples_review_who">
+						<span>Заказчик: Иван Иванов</span>
+					</div>
+					<div class="examples_review_video">
+						<div class="player_frame">
+							<div class="player_frame_2">
+								<div class="player_frame_3">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="examples_review_more">
+						<a href="#" class="button button_long show_ex">Показать текст отзыва</a>
+					</div>
+				</div>
+                <div class="clear"></div>
+                <p class="hide_ex">Применяя устройство тепловизора по окончании монтажных работ, мы оцениваем качество установки, что бы  Вы могли лично убедиться в ее</p>
+                </div>
+                <div class="example_one">
+				<div class="examples_items">
+					<div class="examples_items_group">
+						<a class="example_item examples_item1 gallery" data-fancybox-group="gallery2"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример1">
+						</a>
+						<a class="example_item examples_item2 gallery" data-fancybox-group="gallery2"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример2">
+						</a>
+						<a class="example_item examples_item3 gallery" data-fancybox-group="gallery2"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример3">
+						</a>
+						<a class="example_item examples_item4 gallery" data-fancybox-group="gallery2"  href="img_popular_item.jpg">
+							<img src="img_popular_item.jpg" alt="Пример4">
+						</a>
+					</div>
+				</div>
+				<div class="examples_review">
+					<div class="examples_review_full">
+						<div class="examples_review_from">
+							<span>г. Красноярск ул. Строителей д.6</span>
+						</div>
+						<div class="examples_review_who">
+							<span>Заказчик: Иван Иванов</span>
+						</div>
+						<div class="examples_review_full_photo">
+							<img src="img_reviewer.jpg" alt="Иван Иванов">
+						</div>
+						<div class="examples_review_full_text">
+							<p><span><strong>"Дом получился волшебный."</strong></span></p>
+							<p>Применяя устройство тепловизора по окончании монтажных работ, мы оцениваем качество установки, что бы  Вы могли лично убедиться в ее</p>
+							<p>Применяя устройство тепловизора по окончании монтажных работ, мы оцениваем качество установки, что бы  Вы могли лично убедиться в ее Применяя устройство тепловизора по окончании монтажных работ.</p>
+						</div>
+					</div>
+				</div>
+                <div class="clear"></div>
+                </div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="order" class="section">
+			<div id="order_t" class="section">
+				<div id="order_b" class="section">
+					<div id="order_strip1" class="order_strip"><div class="order_strip_body"></div></div>
+					<div id="order_strip2" class="order_strip"><div class="order_strip_body"></div></div>
+					<div id="order_strip3" class="order_strip"><div class="order_strip_body"></div></div>
+					<div id="order_strip4" class="order_strip"><div class="order_strip_body"></div></div>
+					<div id="order_column" class="column">
+						<div id="order_wants">
+							<div id="want1" class="want"><span>Хотите, чтобы Ваш дом строила опытная бригада?</span></div>
+							<div id="want2" class="want"><span>Хотите, чтобы проект был сдан в срок?</span></div>
+							<div id="want3" class="want"><span>Хотите, чтобы строительство не было кошмаром?</span></div>
+							<div id="want4" class="want"><span>Хотите получить дом из качественных материалов?</span></div>
+							<div id="order_do"><span>Обратитесь в нашу компанию!</span></div>
+						</div>
+						<div id="order_rating">
+							<div id="order_rating_title">
+								<span>Заявка на расчет</span>
+							</div>
+							<div id="order_rating_order">
+								<p>Оставьте заявку на бесплатный расчет проекта <span class="rating_now">сейчас</span> и Вы получите точную смету в течении 24 часов</p>
+								<form action="#">
+									<input type="text" name="order_rating_name" class="rating_input" placeholder="Введите ваше имя">
+									<input type="text" name="order_rating_number" class="rating_input" placeholder="Введите номер телефона">
+									<input type="submit" class="rating_submit" value="Отправить заявку">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="map" class="section">
+            <a id="contacts" class="anchor"></a>
+			<div id="map_t" class="section">
+				<div id="map_title">
+					<h2>КАК НАС НАЙТИ?</h2>
+				</div>
+				<div id="map_body">
+					<div id="map_column" class="column">
+						<div id="map_address">
+							<div id="map_address_city">
+								<span>г.Красноярск, Северное шоссе 7/1</span>
+							</div>
+							<div id="map_address_call">
+								<span>Звоните! С 9:00 до 21:00</span>
+							</div>
+							<div id="map_address_number">
+								<span>+7 (800) 654-33-12</span>
+							</div>
+							<div id="map_address_letter">
+								<span>Пишите! В любое время</span>
+							</div>
+							<div id="map_address_order_call">
+								<a href="#" id="map_order_call" class="button button_tall popup">Обратный звонок</a>
+							</div>
+						</div>
+					</div>
+					<div id="map_full">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2226.2975911929334!2d92.94185900000001!3d56.082767!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5cd7a8b24fe5cb41%3A0x873c9873dcd4af6!2z0YguINCh0LXQstC10YDQvdC-0LUg0YguLCA3LzEsINCa0YDQsNGB0L3QvtGP0YDRgdC6LCDQmtGA0LDRgdC90L7Rj9GA0YHQutC40Lkg0LrRgNCw0Lk!5e0!3m2!1sru!2sru!4v1407262654372" width="100%" height="456" frameborder="0" style="border:0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<div id="footer_column" class="column">
+		<div id="footer_logo">
+			<a href="#"><img src="img/bg_logo.png" alt="SibComfort"></a>
+		</div>
+		<div id="footer_call">
+			<p><img src="img/ico_phone.png" alt="Заказать звонок"> <span class="call_code">+7 (800)</span> <span class="call_number">112-43-67</span> <a href="#" id="footer_order_call" class="button popup">Заказать звонок</a></p>
+		</div>
+	</div>
+</div>
+</body>
+</html>

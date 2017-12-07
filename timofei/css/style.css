@@ -1,0 +1,84 @@
+@font-face {
+	font-family: 'DINPro-light';
+    src: url('../font/DINPro-light.otf');
+	
+}
+body {position:relative;}
+html, body, #wrap {
+height: 100%;
+margin: 0px;
+}
+body > #wrap {
+height: auto;
+min-height: 100%;
+min-width:1024px;
+}
+.clear {clear:both; display:block;}
+
+#left_side {width:25.39%; background:#2C2C2C; float:left; min-height:667px;}
+#logo {width:213px; height: 40px;background:url(../img/logo.png) no-repeat; margin-top:47px; margin-left:7.69%;}
+#left_side nav {margin-top:57px;margin-left:10.38%;}
+#left_side nav ul li{padding-bottom:18px; position:relative;}
+#left_side nav ul li .cursor {position:absolute; display:none; height:1px; top:12px; left:65.22%; background:#63a575;width: 20px;}
+#left_side nav ul li.active .cursor {display:block;}
+#left_side nav ul li a{font:18px 'DINPro-light'; color:#666666; text-decoration:none;}
+#left_side nav ul li.active a {color:#63a575;}
+#left_side nav ul li a:hover {color:#a7a7a7;}
+
+.kontakt {margin-top: 60px;margin-left:10.38%;}
+.kontakt div {height:23px;padding-left:39px; font:18px DINPro-light; color:#666666; margin-bottom:13px;}
+.kontakt div span {color:#7e7e7e;}
+.phone {background:url(../img/phone.png) no-repeat left top;}
+.mail {background:url(../img/mail.png) no-repeat left top;}
+.skype {background:url(../img/skype.png) no-repeat left top;}
+.kontakt #messenge {cursor:pointer; width:154px; background:url(../img/mes.png) no-repeat left top;margin-top:47px; text-transform:uppercase; font-size:13px;line-height:20px;}
+.kontakt #messenge:hover {background-position:left 0 bottom -1px; color:#63a575;}
+#soc_set {margin-left:10.38%;margin-top:47px;}
+.set {display:inline-block; width:22px; height:22px;margin-right:3.46%;}
+#fb {background: url(../img/fb.png) no-repeat;}
+#tw {background: url(../img/tw.png) no-repeat;}
+#vk {background: url(../img/vk.png) no-repeat;}
+#gg {background: url(../img/gg.png) no-repeat;}
+#write_mes {z-index:10;display:none; position:absolute; top:331px; left:28.25%; width:460px;background:#2C2C2C; padding:40px;}
+#write_mes p {margin-bottom:42px; font:24px 'DINPro-light'; color:#ffffff; text-transform:uppercase;}
+#write_mes button {cursor:pointer; margin-top:40px; background:#252525; font:18px 'DINPro-light';color:#585858; line-height:28px; border:none;width:124px; height:32px;}
+#write_mes label {display:block; font:14px 'DINPro-light'; color:#666666; margin-top:35px;width:100%;}
+#write_mes label span {float:left;}
+#close {position:absolute; width:9px; height:9px; background: url(../img/close.jpg);top:10px; right:10px; cursor:pointer;}
+#form_arr {position:absolute; top:168px; height:30px; width:20px; left:-10px; background: url(../img/mes_arr.png);}
+#write_mes textarea {background:none;}
+#write_mes label textarea {float:right; line-height:12px; padding:0;width:366px; height:30px; font:14px 'DINPro-light'; color:#ffffff; background:url(../img/text_bg.png) repeat; border:none; outline:none;}
+#write_mes label textarea:focus {background: url(../img/text_bg_focus.png) repeat;}
+#right_side {width:58.75%; float:right; background:url(../img/right_bg.jpg) no-repeat; -moz-background-size:100% auto; -webkit-background-size:100% auto; -o-background-size:100% auto;  background-size:100% auto; padding-top:147px; padding-right:5.64%; padding-left:10.22%;padding-bottom:107px;}
+#map_shell {width:74.61%; float:right; background:url(../img/right_bg.jpg) no-repeat; -moz-background-size:100% auto; -webkit-background-size:100% auto; -o-background-size:100% auto;  background-size:100% auto;}
+#wrap h1 {font:48px 'DINPro-light'; color:#ffffff; line-height:54px; margin-bottom:30px;}
+#right_side h2 {font:48px 'DINPro-light'; color:#ffffff; line-height:54px; margin-bottom:15px; margin-top:30px;}
+#right_side h4 {display:inline-block;font:24px 'DINPro-light'; color:#e3eae4; line-height:20px; margin-bottom:24px;}
+#right_side p {color:#e3eae4; font:14px 'DINPro-light'; line-height:20px;}
+#right_side .citata {padding:33px 10.35%; background: url(../img/cit_bg.png) repeat; margin-top:24px; position:relative;margin-bottom:30px;}
+#right_side .citata p{font:18px 'DINPro-light'; color:#e3eae4; line-height:24px;}
+#right_side .autograph {color:#e3eae4; font:13px 'DINPro-light'; margin-top:17px;}
+.top_vuch {background: url(../img/top_vuch.png) no-repeat; position:absolute; width:12px; height:7px; top:29px; right:4.05%;}
+.bot_vuch {background: url(../img/bot_vuch.png) no-repeat; position:absolute; width:12px; height:7px; bottom:26px; left:5.01%;}
+.usluga {margin-bottom:3px; cursor:pointer; padding:12px 3.9% 14px 3.75%; background: url(../img/cit_bg.png) repeat; font:18px 'DINPro-light'; color:#65d483;}
+.stat {margin-bottom:3px; padding:12px 3.9% 14px 3.75%; background: url(../img/cit_bg.png) repeat; text-decoration:none; display:block;}
+#right_side .stat p {display: block;font:24px 'DINPro-light'; color:#ffffff; margin-bottom:17px;}
+#right_side .stat p:hover {color:#65d483;}
+.price {min-width:80px; display:inline-block; text-align:left; height:18px; float:right; color:#b1ccc0;}
+.rubl {margin-left:10px; width:10px; height:18px; display:inline-block; background: url(../img/rubl.png) no-repeat bottom left;}
+.arr {display:inline-block; max-width:78%; padding-right:10px; background: url(../img/arr_usl.png) no-repeat center right;}
+.usluga:hover {color:#ffffff;}
+.usluga:hover .rubl {background-position: bottom right;}
+.usluga:hover .price {color:#ffffff;}
+.usluga p{display:none;margin-top:20px; max-width:78%;}
+#slider {position:relative;}
+#pagination {margin-top:30px;}
+#pagination a {display:block; border:1px solid #e3eae4; margin-right:5px; color:#e3eae4; font:14px 'DINPro-light'; padding: 0px 7px 1px 7px; float:left; text-decoration:none; }
+#pagination a:hover {background:#e3eae4; color:#303030;}
+#map_shell {position:relative;}
+#map {width:100%;min-height:667px;}
+#kont_page h1 {color:#000000;}
+#kont_page {z-index:5;position:absolute;top:0; left:0; padding-top:147px; padding-right:10.22%; padding-left:10.22%;padding-bottom:107px;}
+#kont_page #kont_shell {background: url(../img/kont_bg.png) repeat; padding:20px 3.13%; width:93.74%;}
+#kont_page #adress {font:24px 'DINPro-light'; color:#ffffff;display:block;}
+#kont_page .kontakt {margin-left:0;}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>тимофей</title>
+<!--[if lt IE 9]> 
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<link href="css/jshowoff.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.jshowoff.min.js"></script>
+<script type="text/javascript" src="js/jquery.jshowoff.js"></script>
+<script type="text/javascript" src="js/autoresize.jquery.js"></script>
+
+        <script>
+            var lefth, righth, allh;
+            function valign() {
+            allh=document.getElementById("wrap").clientHeight;
+            document.getElementById("left_side").style.height=allh+"px";
+            document.getElementById("right_side").style.minHeight=allh+"px";
+            lefth=document.getElementById("left_side").clientHeight;
+            righth=document.getElementById("right_side").clientHeight;
+            if(lefth>righth){
+            document.getElementById("right_side").style.minHeight=lefth+"px";
+            }else{
+            document.getElementById("left_side").style.height=righth+"px";
+            }
+            };
+        </script>
+<script>
+jQuery(document).ready(function(){
+    jQuery(function () {
+		
+		jQuery('#messenge').click(function () {
+			jQuery('#write_mes').show();
+			return false;
+		});
+        jQuery('#close').click(function () {
+			jQuery('#write_mes').hide();
+			return false;
+		});
+        jQuery('.usluga').click(function () {
+            if($(this).find('p').css('display')=='none'){
+			jQuery(this).find('p').show();
+            }else{
+			jQuery(this).find('p').hide();
+            }
+		});
+ jQuery('textarea').autoResize({extraSpace: 0});
+
+    
+	});
+});
+</script>
+        <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+
+<script type="text/javascript">
+    if (window.location.pathname == '/traffic-page') {
+        // На этой странице нужно показать пробки и инструмент поиска по карте
+        ymaps.load(['package.traffic', 'package.search'], addControls);
+    }
+    function addControls(map) {
+        map.controls.add('trafficControl').add('searchControl');
+    }
+</script>
+</head>
+<body onload="valign();" onresize="valign();">
+<div id="wrap">
+        <div id="left_side">
+            <div id="logo"></div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#">Услуги и цены</a><span class="cursor"></span></li>
+                    <li><a href="#">Обо мне</a><span class="cursor"></span></li>
+                    <li><a href="#">Статьи</a><span class="cursor"></span></li>
+                    <li><a href="#">Контакты</a><span class="cursor"></span></li>
+                </ul>
+            </nav>
+            <div class="kontakt">
+                <div class="phone">+ 7 (351) <span>247-31-67</span></div>
+                <div class="mail">tim@bourdin.ru</div>
+                <div class="skype">timbourdin</div>
+            <div id="messenge">Написать сообщение</div>
+            </div>
+            <div id="soc_set">
+                <a href="#" class="set" id="fb"></a>
+                <a href="#" class="set" id="tw"></a>
+                <a href="#" class="set" id="vk"></a>
+                <a href="#" class="set" id="gg"></a>
+            </div>
+        </div>
+                <div id="write_mes">
+                    <p>Написать быстрое сообщение</p>
+                    <form>
+                        <label><span>Ваше имя:</span><textarea></textarea><span class="clear"></span></label>
+                        <div class="clear"></div>
+                        <label><span>Ваш e-mail:</span><textarea></textarea><span class="clear"></span></label>
+                        <div class="clear"></div>
+                        <label><span>Сообщение:</span><textarea></textarea><span class="clear"></span></label>
+                        <div class="clear"></div>
+                        <button>Отправить</button>
+                    </form>
+            <div id="form_arr"></div>
+            <div id="close"></div>
+                </div>
+        <div id="right_side">
+            <h1>Статьи</h1>
+            <a href="#" class="stat"><p>Как проверить позиции сайта в Яндексе, Google и других поисковых системах?</p>
+                <span class="autograph">Суббота, 06 Июль 2013 16:10</span>
+            </a>
+            <a href="#" class="stat"><p>Как проверить позиции сайта в Яндексе, Google и других поисковых системах?</p>
+                <span class="autograph">Суббота, 06 Июль 2013 16:10</span>
+            </a>
+            <a href="#" class="stat"><p>Как проверить позиции сайта в Яндексе, Google и других поисковых системах?</p>
+                <span class="autograph">Суббота, 06 Июль 2013 16:10</span>
+            </a>
+            <a href="#" class="stat"><p>Как проверить позиции сайта в Яндексе, Google и других поисковых системах?</p>
+                <span class="autograph">Суббота, 06 Июль 2013 16:10</span>
+            </a>
+            <div id="pagination">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#" class="last_page">Последняя страница</a>
+            </div>
+        </div>
+</div>
+</body>
+</html>

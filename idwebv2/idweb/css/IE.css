@@ -1,0 +1,22 @@
+
+
+#auto_mod .right_img {position:relative;}
+#auto_mod .imga_in_r {position:relative; behavior: url(css/pie/PIE.php);}
+
+#auto_mod .left_img {position:relative;}
+#auto_mod .imga_in_l {position:relative; behavior: url(css/pie/PIE.php);}
+
+#top_section section #tekhnika{position:relative;}
+#top_section section #tekhnika form{position:relative; behavior: url(css/pie/PIE.php);}
+
+#top_section section #tekhnika form label {position:relative;}
+#top_section section #tekhnika form label input{position:relative; behavior: url(css/pie/PIE.php);}
+
+.form_shell .column{position:relative;}
+.form_shell .column form{position:relative; behavior: url(css/pie/PIE.php);}
+
+.form_shell .column form label{position:relative;}
+.form_shell .column form label input{position:relative; behavior: url(css/pie/PIE.php);}
+
+#portfolio img{position:relative;}
+#portfolio article a{position:relative; behavior: url(css/pie/PIE.php);}

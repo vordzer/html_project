@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>синицын</title>
+<!--[if lt IE 9]> 
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+<![endif]-->
+<link href="css/reset.css" type="text/css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/js.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+var Yotn, size_pop;
+var tek,pol;
+jQuery(document).ready(function(){
+
+	jQuery(function () {
+ 
+		size_pop=jQuery('.pop_up').size ()
+    
+	});
+    jQuery(function () {
+ 
+		jQuery('#go_top').click(function () {
+			jQuery('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+    
+	});
+    jQuery(function () {
+ 
+		jQuery('.light').click(function () {
+		  tek=1;
+          Yotn =jQuery(window).scrollTop();
+          Yotn=Yotn+10;
+		    jQuery('#pop1').css('top', Yotn+'px')
+			jQuery('#pop1').show();
+          jQuery('#panel span').text(tek+'/'+size_pop)
+			return false;
+		});
+    
+	});
+    jQuery(function () {
+ 
+		jQuery('#panel #close').click(function () {
+			jQuery('.pop_up').hide();
+			return false;
+		});
+    
+	});
+    jQuery(function () {
+ 
+		jQuery('#panel #back').click(function () {
+		  jQuery('#pop'+tek).hide();
+		  if(tek==1){
+          Yotn =jQuery(window).scrollTop();
+          Yotn=Yotn+10;
+		    jQuery('#pop'+size_pop).css('top', Yotn+'px');
+			jQuery('#pop'+size_pop).show();
+              tek=size_pop;
+		  } else {
+		      pol=tek-1;
+          Yotn =jQuery(window).scrollTop();
+          Yotn=Yotn+10;
+		    jQuery('#pop'+pol).css('top', Yotn+'px');
+			jQuery('#pop'+pol).show();
+            tek=pol;        
+		  }
+          jQuery('#panel span').text(tek+'/'+size_pop)
+			return false;
+		});
+    
+	});
+    jQuery(function () {
+ 
+		jQuery('#panel #forw').click(function () {
+		  jQuery('#pop'+tek).hide();
+		  if(tek==size_pop){
+          Yotn =jQuery(window).scrollTop();
+          Yotn=Yotn+10;
+		    jQuery('#pop1').css('top', Yotn+'px');
+			jQuery('#pop1').show();
+              tek=1;
+		  } else {
+		      pol=tek+1;
+          Yotn =jQuery(window).scrollTop();
+          Yotn=Yotn+10;
+		    jQuery('#pop'+pol).css('top', Yotn+'px');
+			jQuery('#pop'+pol).show();
+            tek=pol;        
+		  }
+          jQuery('#panel span').text(tek+'/'+size_pop)
+			return false;
+		});
+    
+	});
+    jQuery(function () {
+ 
+		jQuery('#gallery a').click(function () {
+        var vSrc, vAlt;
+        vSrc=jQuery(this).attr("href");
+        vAlt=jQuery(this).attr("title");
+        jQuery('.pokrov').hide();
+        jQuery(this).find('.pokrov').show();
+		jQuery('.pop_up figure img').attr({src: vSrc});
+		jQuery('.pop_up figure h3').text(vAlt);
+			return false;
+		});
+    
+	});
+      jQuery(function () {
+    jQuery('#top_form').hide();
+    jQuery('#but_svyaz').click(function (e) {
+      var jQuerymessage = jQuery('#top_form');
+ 
+      if (jQuerymessage.css('display') != 'block') {
+        jQuerymessage.show();
+ 
+        var yourClick = true;
+        jQuery(document).bind('click.myEvent', function (e) {
+          if (!yourClick && jQuery(e.target).closest('#top_form').length == 0) {
+            jQuerymessage.hide();
+            jQuery(document).unbind('click.myEvent');
+          }
+          yourClick = false;
+        });
+      }
+ 
+      e.preventDefault();
+    });
+  });
+});
+</script>
+</head>
+<body>
+<div class="column">
+<header>
+        <div id="logo"><a href="#"></a></div>
+        <div id="slogan"><p><span>Евгений Cиницын</span><br />фотографии с историями</p></div>
+        <div id="header_right">
+            <div id="soc">
+                <div class="soc_set" id="fb"><a href="#"></a></div>
+                <div class="soc_set" id="tw"><a href="#"></a></div>
+                <div class="soc_set" id="fr"><a href="#"></a></div>
+                <div class="soc_set" id="vk"><a href="#"></a></div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            <div id="but_svyaz"><a href="#">связаться со мной</a></div>
+            <div id="top_form">
+                <form>
+                    <input type="text" placeholder="Ваше имя"/>
+                    <input type="text" placeholder="Ваш телефон или e-mail"/>
+                    <textarea placeholder="Ваше сообщение"></textarea>
+                    <button>Отправить</button>
+                </form>
+            </div>
+            <div class="clear"></div>
+            <p>позвоните, чтобы договориться о встрече&nbsp;<span>+&nbsp;7&nbsp;923-765-34-56</span></p>
+        </div>
+        <div class="clear"></div>
+</header>
+<section id="banner">
+                <div id="sliderim" class="right">
+	               <div id="container">
+		<div id="slider">
+			<ul>
+            <li>
+	<div class="slide">
+        <div><img src="slp1.jpg" alt="" class="osn_pic" /><img src="slp2.jpg" alt="" class="top_pic" /><img src="slp3.jpg" alt="" class="bot_pic"/></div>
+        <div class="slide_opis">
+            <h4>Репортажная съёмка в любой части мира</h4>
+            <p>Музыканты</p>
+            <a href="#" class="light">Посмотреть фотоисторию</a>
+        </div>
+    </div>
+    </li>
+            <li>
+	<div class="slide">
+        <div><img src="slp1.jpg" alt="" class="osn_pic" /><img src="slp2.jpg" alt="" class="top_pic" /><img src="slp3.jpg" alt="" class="bot_pic"/></div>
+        <div class="slide_opis">
+            <h4>Репортажная съёмка в любой части мира</h4>
+            <p>Музыканты</p>
+            <a href="#" class="light">Посмотреть фотоисторию</a>
+        </div>
+    </div>
+    </li>
+            <li>
+	<div class="slide">
+        <div><img src="slp1.jpg" alt="" class="osn_pic" /><img src="slp2.jpg" alt="" class="top_pic" /><img src="slp3.jpg" alt="" class="bot_pic"/></div>
+        <div class="slide_opis">
+            <h4>Репортажная съёмка в любой части мира</h4>
+            <p>Музыканты</p>
+            <a href="#" class="light">Посмотреть фотоисторию</a>
+        </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    <div id="wrap_pag">
+		<ul id="pagination" class="pagination">
+			<li onclick="slideshow.pos(0)"></li>
+			<li onclick="slideshow.pos(1)"></li>
+			<li onclick="slideshow.pos(2)"></li>
+		</ul>
+    </div>
+</div>
+<script type="text/javascript">	
+var slideshow=new TINY.slider.slide('slideshow',{
+	id:'slider',
+	auto:4,
+	resume:false,
+	vertical:false,
+	navid:'pagination',
+	activeclass:'current',
+	position:0,
+	rewind:false,
+});
+</script>
+</section>
+<section id="about">
+    <h2 class="corbel">Обо мне</h2>
+    <article>
+        <figure>
+            <a href="#" class="cBox">HELLO & WELCOME</a>
+            <img alt="" src="portret.jpg"/>
+        </figure>
+        <h3>Меня зовут Евгений Синицын.</h3>
+        <p>Я – фотограф.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel urna nec nisl pharetra condimentum ut ege nunc.
+Pellentesque at rhoncus erat. Nulla sed metus at ipsum volutpat bibendum consectetur in m. Suspendisse auctor
+mauris et ultricies sollicitudin. Maecenas luctus mauris ante, ac convallis rmentum at. Morbi eu pellentesque sem.
+Integer eget facilisis lorem. Etiam tincidunt nisl vitae mauris vehicula n. Maecenas aliquet eleifend turpis, imperdiet
+condimentum tortor congue a. Mauris ornare aliquam libero sit amet ultrices. Nulla sollicitudin ante metus, porttitor
+Maecenas luctus mauris ante, ac convallis rmentum at. </p>
+        <p>Semper odio convallis et. Vestibulum viverra ing libero quis feugiat. Nunc suscipit vestibulum dui, id imperdiet sem. Nulla sed metus at ipsum volutpat bibendum
+consectetur in quam.</p>
+        <div class="clear"></div>
+    </article>
+</section>
+<section id="clients">
+    <h2>C кем я работаю</h2>
+    <div id="client_wrap">
+        <a href="#">
+        <figure class="client">
+            <p><img alt="" src="img/smi.png"/></p>
+            <p><span>СМИ</span></p>
+            <p>съёмка сюжетов</p>
+        </figure>
+        </a>
+        <a href="#">
+        <figure class="client">
+            <p><img alt="" src="img/microfone.png"/></p>
+            <p><span>промоутеры</span></p>
+            <p>съёмка концертов</p>
+        </figure>
+        </a>
+        <a href="#">
+        <figure class="client">
+            <p><img alt="" src="img/zvezda.png"/></p>
+            <p><span>Event-агентства</span></p>
+            <p>съёмка мероприятий</p>
+        </figure>
+        </a>
+    <div class="clear"></div>
+    </div>
+    <p>Со всеми, кому нужна качественная репортажная съемка – фотографии с историями</p>
+</section>
+<section id="portfolio">
+    <h2>Портфолио</h2>
+    <article>
+        <figure>
+            <a href="#" class="light">
+            <img alt="" src="pic1.jpg" />
+            <img class="foc" alt="" src="pic1_hov.jpg" />
+            <div class="ali">История про концерт</div>
+            </a>
+        </figure>
+        <p>Мне нравится снимать музыкантов, но я не
+ищу музыки во время съемок, мне куда
+интересней, как они себя чувствуют как люди,
+когда играют</p>
+    </article>
+    <article>
+        <figure>
+            <a href="#" class="light">
+            <img alt="" src="pic2.jpg" />
+            <img class="foc" alt="" src="pic2_hov.jpg" />
+            <div class="ali">История про солдат</div>
+            </a>
+        </figure>
+        <p>Мне нравится снимать музыкантов, но я не
+ищу музыки во время съемок, мне куда
+интересней, как они себя чувствуют как люди,
+когда играют</p>
+    </article>
+    <article class="last">
+        <figure>
+            <a href="#" class="light">
+            <img alt="" src="pic3.jpg" />
+            <img class="foc" alt="" src="pic3_hov.jpg" />
+            <div class="ali">История про детей и стрижа</div>
+            </a>
+        </figure>
+        <p>Мне нравится снимать музыкантов, но я не
+ищу музыки во время съемок, мне куда
+интересней, как они себя чувствуют как люди,
+когда играют</p>
+    </article>
+    <div class="clear"></div>
+    <p><a href="#" class="light">Смотреть все истории</a></p>
+</section>
+<section id="sotrudnichestvo">
+    <h2>C кем я сотрудничаю</h2>
+    <div class="sotr"><a href="#"><img alt="" src="vip74.jpg"/><img class="ist" alt="" src="vip74_hov.jpg"/></a></div>
+    <div class="sotr"><a href="#"><img alt="" src="feel_more.jpg"/><img class="ist" alt="" src="feel_more_hov.jpg"/></a></div>
+    <div class="sotr"><a href="#"><img alt="" src="74.jpg"/><img class="ist" alt="" src="74_hov.jpg"/></a></div>
+    <div class="sotr"><a href="#"><img alt="" src="goethe.jpg"/><img class="ist" alt="" src="goethe_hov.jpg"/></a></div>
+    <div class="clear"></div>
+</section>
+<footer>
+    <div id="footer_left">
+        <h2>Мои контакты</h2>
+        <p><span>+ 7 923-765-34-56</span></p>
+        <p>Skype: prostophoto</p>
+        <p>eugeny.sinitsin@gmail.com</p>
+            <div id="soc">
+                <div class="soc_set" id="vk"><a href="#"></a></div>
+                <div class="soc_set" id="fr"><a href="#"></a></div>
+                <div class="soc_set" id="tw"><a href="#"></a></div>
+                <div class="soc_set" id="fb"><a href="#"></a></div>
+                <div class="clear"></div>
+            </div>
+    </div>
+                <form id="zakaz_foot">
+                    <p>Заказать у меня съёмку</p>
+                    <input type="text" placeholder="Ваше имя"/>
+                    <input type="text" placeholder="Ваш телефон"/>
+                    <button><span>Заказать</span></button>
+                </form>
+    <div class="clear"></div>
+    <a id="go_top">наверх</a>
+</footer>
+</div>
+<div class="pop_up" id="pop1">
+    <figure>
+        <img alt="" src="strizh1.jpg"/>
+        <h3>Дети и стриж</h3>
+    </figure>
+    <div>
+    <div id="gallery">
+        <a href="strizh1.jpg" title="дети и стриж"><img alt="" src="strizh1.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh2.jpg" title="дети + стриж"><img alt="" src="strizh2.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh3.jpg" title="дети и стриж"><img alt="" src="strizh3.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh4.jpg" title="дети и стриж"><img alt="" src="strizh4.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh5.jpg" title="дети и стриж"><img alt="" src="strizh5.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh6.jpg" title="дети и стриж"><img alt="" src="strizh6.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh7.jpg" title="дети и стриж"><img alt="" src="strizh7.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh8.jpg" title="дети и стриж"><img alt="" src="strizh8.jpg"/><span class="pokrov"></span></a>
+    </div>
+    <div id="panel">
+        <div id="back"></div>
+        <div id="forw"></div>
+        <span>8/32</span>
+        <div id="close"></div>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <div id="pop_del"></div>
+    <h5>Как я снимал дворовых ребят, которые нашли нелетающую птицу </h5>
+    <p>Я встретил этих ребят на стадионе в Копейске. Там должен был проходить городской праздник, но его отменили из-за плохой погоды, никого толком не предупредив.
+Я собирался уходить, когда встретил их – они делали сальто с забора. Мне стало интересно поснимать таких ребят и я подошел поближе познакомиться
+и пофотографировать их. Через несколько кадров один из них нашел в траве птицу, кажется, это был стриж: он никак не мог взлететь и просто лежал в траве. Один
+из ребят поднял его и пробовал подкинуть, но тот просто снова падал на землю. Он взял его на руки и стриж вцепился в одежду. Друзья паренька тут же окружили находку
+и пробовали ее гладить, но птица больно кусалась. Улететь стриж не мог и очень этого боялся; взять его с собой и выходить тоже никто не решился. Так и простояв
+с птицей какое-то время, ребята были вынуждены оставить ее в парке неподалеку.</p>
+</div>
+<div class="pop_up" id="pop2">
+    <figure>
+        <img alt="" src="strizh1.jpg"/>
+        <h3>Дети и стриж</h3>
+    </figure>
+    <div>
+    <div id="gallery">
+        <a href="strizh1.jpg" title="дети и стриж"><img alt="" src="strizh1.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh2.jpg" title="дети + стриж"><img alt="" src="strizh2.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh3.jpg" title="дети и стриж"><img alt="" src="strizh3.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh4.jpg" title="дети и стриж"><img alt="" src="strizh4.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh5.jpg" title="дети и стриж"><img alt="" src="strizh5.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh6.jpg" title="дети и стриж"><img alt="" src="strizh6.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh7.jpg" title="дети и стриж"><img alt="" src="strizh7.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh8.jpg" title="дети и стриж"><img alt="" src="strizh8.jpg"/><span class="pokrov"></span></a>
+    </div>
+    <div id="panel">
+        <div id="back"></div>
+        <div id="forw"></div>
+        <span>8/32</span>
+        <div id="close"></div>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <div id="pop_del"></div>
+    <h5>Как я снимал дворовых ребят, которые нашли нелетающую птицу +</h5>
+    <p>Я встретил этих ребят на стадионе в Копейске. Там должен был проходить городской праздник, но его отменили из-за плохой погоды, никого толком не предупредив.
+Я собирался уходить, когда встретил их – они делали сальто с забора. Мне стало интересно поснимать таких ребят и я подошел поближе познакомиться
+и пофотографировать их. Через несколько кадров один из них нашел в траве птицу, кажется, это был стриж: он никак не мог взлететь и просто лежал в траве. Один
+из ребят поднял его и пробовал подкинуть, но тот просто снова падал на землю. Он взял его на руки и стриж вцепился в одежду. Друзья паренька тут же окружили находку
+и пробовали ее гладить, но птица больно кусалась. Улететь стриж не мог и очень этого боялся; взять его с собой и выходить тоже никто не решился. Так и простояв
+с птицей какое-то время, ребята были вынуждены оставить ее в парке неподалеку.</p>
+</div>
+<div class="pop_up" id="pop3">
+    <figure>
+        <img alt="" src="strizh1.jpg"/>
+        <h3>Дети и стриж</h3>
+    </figure>
+    <div>
+    <div id="gallery">
+        <a href="strizh1.jpg" title="дети и стриж"><img alt="" src="strizh1.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh2.jpg" title="дети + стриж"><img alt="" src="strizh2.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh3.jpg" title="дети и стриж"><img alt="" src="strizh3.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh4.jpg" title="дети и стриж"><img alt="" src="strizh4.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh5.jpg" title="дети и стриж"><img alt="" src="strizh5.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh6.jpg" title="дети и стриж"><img alt="" src="strizh6.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh7.jpg" title="дети и стриж"><img alt="" src="strizh7.jpg"/><span class="pokrov"></span></a>
+        <a href="strizh8.jpg" title="дети и стриж"><img alt="" src="strizh8.jpg"/><span class="pokrov"></span></a>
+    </div>
+    <div id="panel">
+        <div id="back"></div>
+        <div id="forw"></div>
+        <span>8/32</span>
+        <div id="close"></div>
+    </div>
+    </div>
+    <div class="clear"></div>
+    <div id="pop_del"></div>
+    <h5>Как я снимал дворовых ребят, которые нашли нелетающую птицу -</h5>
+    <p>Я встретил этих ребят на стадионе в Копейске. Там должен был проходить городской праздник, но его отменили из-за плохой погоды, никого толком не предупредив.
+Я собирался уходить, когда встретил их – они делали сальто с забора. Мне стало интересно поснимать таких ребят и я подошел поближе познакомиться
+и пофотографировать их. Через несколько кадров один из них нашел в траве птицу, кажется, это был стриж: он никак не мог взлететь и просто лежал в траве. Один
+из ребят поднял его и пробовал подкинуть, но тот просто снова падал на землю. Он взял его на руки и стриж вцепился в одежду. Друзья паренька тут же окружили находку
+и пробовали ее гладить, но птица больно кусалась. Улететь стриж не мог и очень этого боялся; взять его с собой и выходить тоже никто не решился. Так и простояв
+с птицей какое-то время, ребята были вынуждены оставить ее в парке неподалеку.</p>
+</div>
+</body>
+</html>

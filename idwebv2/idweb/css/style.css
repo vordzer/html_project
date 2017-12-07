@@ -1,0 +1,179 @@
+
+html,body{ position:static; margin:0px; min-height:100%; padding:0px 0 0 0; color:#818181; font: 16px 'Cuprum'; line-height:22px; text-align:left; background:#ffffff;}
+
+.column {margin:0 auto; width:940px;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+a {text-decoration: none;}
+#top_section { padding-top:92px;height:787px; background:#ffffff; position:relative; background: url(../img/header_bg.jpg) no-repeat; -moz-background-size:100% 100%; -webkit-background-size:100% 100%; -o-background-size:100% 100%;  background-size:100% 100%;}
+header {display:block; height:92px; padding-top:8px;background:none; position:fixed; top:0; width:100%; z-index:500;}
+header.bg {background:url(../img/temfon.png) repeat;}
+header #logo {width:105px;height:75px; float:left;}
+header #logo a{height:100%;display:block; width:100%;background: url(../img/logo.png) no-repeat -1px -1px;}
+header #header_right {float:right; position:relative; text-align:right;}
+header #header_right p { font:26px 'Roboto'; color:#ffffff;}
+header #header_right form {height:47px; padding:0;margin-top:12px;}
+header #header_right form .button {display:inline-block; overflow:visible; background: url(../img/button.png) no-repeat; height:47px; width:156px;}
+header #header_right form button { cursor:pointer; margin-bottom:17px; width:156px; height:30px; background:none;  padding:0 0 0 0; color:#4e5255; font:bold 12px 'Roboto'; text-align:center; text-transform:uppercase; border:none;}
+header #header_right form button:hover { background: url(../img/button_active.png) no-repeat;}
+header #header_right #tekhnika form button:focus {outline:none;}
+
+#top_section section {text-align:center; padding-top:57px;}
+#top_section section .slogan {font: 900 47px 'Roboto'; color:#dcf510; line-height:40px; margin-bottom:23px;}
+#top_section section p {font: bold 24px 'Roboto'; color:#5addfb; line-height:18px;}
+#top_section section #tekhnika {height:134px; padding-top:302px; background: url(../img/tekhnika.png) no-repeat center top;margin-top:69px;}
+#top_section section #tekhnika form { padding-top:22px; border:7px solid #d9f116; border-radius:5px; width:796px; height:95px; background: url(../img/top_form_bg.png) repeat; margin-left:61px; text-align:center;}
+#top_section section #tekhnika form p {font:25px 'Roboto'; color:#ffffff; line-height:18px; margin-bottom:21px;}
+#top_section section #tekhnika form p span {color:#d9f113;}
+#top_section section #tekhnika form label {width:290px; margin-left:20px; font:18px 'Roboto'; color:#ffffff; line-height: 18px;}
+#top_section section #tekhnika form label input {width:176px; height:29px; border:1px solid #3f3d43; margin-left:18px; border-radius:3px; background:url(../img/input_bg.png) repeat; font:14px 'Roboto'; color:#ffffff; line-height: 18px; padding: 0 11px;}
+#top_section section #tekhnika form label input:focus {outline:none;}
+#top_section section #tekhnika form .button {display:inline-block; overflow:visible; background: url(../img/button.png) no-repeat; height:47px; width:156px;}
+#top_section section #tekhnika form button { cursor:pointer; margin-bottom:17px; width:156px; height:30px; background:none;  padding:0 0 0 0; color:#4e5255; font:bold 12px 'Roboto'; text-align:center; text-transform:uppercase; border:none;}
+#top_section section #tekhnika form button:hover { background: url(../img/button_active.png) no-repeat;}
+#top_section section #tekhnika form button:focus {outline:none;}
+
+nav {float:left;}
+nav ul {margin-left:30px; width:590px;}
+nav ul li {text-align:left; height:27px;width:270px;margin-left:25px; float:left;}
+nav ul li.last {border-right:0;}
+nav ul li a {font:15px 'Roboto'; color:#ffffff; line-height:29px; text-transform:uppercase; text-decoration:none; font-weight:500;}
+nav ul li a:hover {color:#ff0000;}
+
+#clients div {display:table; padding:30px 0; width:100%;}
+#clients div figure {display:table-cell; text-align:center; vertical-align:middle;}
+#clients div figure a {display:inline-block; text-decoration:none;}
+
+#corp_site {padding:73px 20px 85px 20px; background: url(../img/sect_bg.png) repeat;}
+#corp_site div.right {width:470px;}
+#corp_site div.right p.head {font: bold 35px 'Roboto'; line-height:18px;color:#ffffff; margin-bottom:26px;}
+#corp_site div.right p.head2 {font: bold 24px 'Roboto'; line-height:18px; color:#5addfb; margin-bottom:54px;}
+#corp_site div.right p {font:16px Tahoma; color:#ffffff;line-height:24px;}
+
+#modules {height: 979px; background: url(../img/modules_bg.png) repeat-x; padding: 72px 0 87px 0;}
+#modules p.head {text-align:center; font: bold 35px 'Roboto'; color:#093844; line-height:1; margin-bottom: 74px;}
+.galereya article {width:288px; margin-right:37px; text-align:center; margin-bottom: 60px;}
+.galereya article.last {margin-right:0;}
+.galereya article img {margin-bottom:25px;}
+#modules p{ font:bold 25px 'Roboto'; color:#093844; line-height:18px; margin-bottom:12px;}
+#modules p span {font:16px Tahoma; color:#3c3a38; line-height:18px;}
+
+#example { background: url(../img/sect2_bg.png) repeat-y; padding: 72px 0 0 0;}
+#example p.head {text-align:center; font: bold 35px 'Roboto'; color:#ffffff; line-height:1; margin-bottom: 74px;}
+#example a {display:block;font:16px Tahoma; color:#36bce2; line-height:18px; text-decoration:none;}
+#example a span {text-decoration:underline;}
+#example a:hover span{text-decoration: none;}
+
+.form_shell {padding:90px 0;}
+.form_shell .column {position:relative;}
+.form_shell .column img {position:absolute;top:25px;}
+.form_shell .column img.left_img {left:-98px;}
+.form_shell .column img.right_img {right:-98px;}
+.form_shell form { margin-left:276px; padding-top:22px; border:7px solid #53d9fa; border-radius:5px; width:363px; height:259px; background: url(../img/top_form_bg.png) repeat;text-align:center;}
+.form_shell form p {font:900 23px 'Roboto'; color:#ffffff; line-height:23px; margin-bottom:40px;}
+.form_shell form p span {color:#d9f113; text-transform:uppercase;}
+.form_shell form label {width:320px; display:block; margin-bottom:15px; font:18px 'Roboto'; color:#ffffff; line-height: 18px; text-align:right;}
+.form_shell form label input { width:176px; height:29px; border:1px solid #3f3d43; margin-left:18px; border-radius:3px; background:url(../img/input_bg.png) repeat; font:14px 'Roboto'; color:#ffffff; line-height: 18px; padding: 0 11px;}
+.form_shell form label input:focus {outline:none;}
+.form_shell form .button {margin-top:25px; display:inline-block; overflow:visible; background: url(../img/button.png) no-repeat; height:47px; width:156px;}
+.form_shell form button { cursor:pointer; margin-bottom:17px; width:156px; height:30px; background:none;  padding:0 0 0 0; color:#4e5255; font:bold 12px 'Roboto'; text-align:center; text-transform:uppercase; border:none;}
+.form_shell form button:hover { background: url(../img/button_active.png) no-repeat;}
+.form_shell form button:focus {outline:none;}
+
+#video {padding:75px 0; background: url(../img/sect3_bg.png) repeat-y center center; height:541px;}
+#video p.head {font:bold 35px 'Roboto'; color:#ffffff; text-align:center; margin-bottom:72px;}
+#video .column div {margin-left:149px;}
+
+#auto_mod {padding:75px 0; background: url(../img/sect4_bg.png) repeat-y;overflow:hidden;}
+#auto_mod .column {overflow:hidden;max-width:940px;}
+#auto_mod .head {font:bold 35px 'Roboto'; color:#dcf510; text-align:center; margin-bottom:75px;}
+#auto_mod .right_img {margin-bottom:70px;padding-left:80px;  line-height:24px; font:16px Tahoma; color:#ffffff;}
+#auto_mod .img_in_r {box-shadow: 10px 10px 10px #222222; border-radius:25px; margin:2px 79px 40px 79px;display:block; float:right;width:132px; height:132px; background: url(../img/auto_mod1.png) no-repeat right top;}
+#auto_mod .left_img {margin-top:70px; padding-right:80px;  line-height:24px; font:16px Tahoma; color:#ffffff;}
+#auto_mod .img_in_l {box-shadow: 10px 10px 10px #222222; border-radius:25px; margin:20px 79px 50px 79px;display:block; float:left;width:132px; height:132px; background: url(../img/auto_mod2.png) no-repeat right top;}
+#auto_mod .excel {margin-left:170px; background:url(../img/excel.png) no-repeat; padding-left:290px;font: bold 24px 'Roboto'; color:#5addfb; padding-top:75px; padding-bottom:60px;}
+#auto_mod .vivod {text-align:center; font:bold 24px 'Roboto'; color:#ffffff; margin-top:85px;}
+
+#exam_mod {padding:40px 0 75px 0; background: url(../img/sect4_bg.png) repeat-y;}
+#exam_mod .head {font:bold 35px 'Roboto'; color:#dcf510; text-align:center; margin-bottom:75px;}
+#exam_mod p{ font:bold 25px 'Roboto'; color:#ffffff; line-height:18px; margin-bottom:12px;}
+#exam_mod p span {font:16px Tahoma; color:#ffffff; line-height:18px;}
+
+#portfolio {padding-top:77px;height:934px;background: url(../img/port_bg.png) repeat-x;}
+#portfolio .head {font:bold 35px 'Roboto'; color:#093844; text-align:center; margin-bottom:75px;}
+#portfolio article {margin-right:11px;width:302px;}
+#portfolio img {border:7px solid #1f94b6; border-radius:8px;}
+#portfolio a {display:block;font:16px Tahoma; color:#1f94b6; line-height:18px; text-decoration:none;}
+#portfolio a span {text-decoration:underline;}
+#portfolio a:hover span{text-decoration: none;}
+
+.hide {opacity:0!important;}
+
+#profi {padding-top:77px;}
+#profi .head {font:bold 35px 'Roboto'; color:#093844; text-align:center; margin-bottom:75px;}
+#profi .column div.left {background:url(../img/minus_bg.png) repeat;width:470px; height:330px;}
+#profi .column div p {display:table-cell; width:470px; height:76px; border-bottom:1px solid #a66b68; color:#ffffff; text-align:center; vertical-align:middle; font:bold 20px 'Roboto'; line-height:18px;}
+#profi .column div.right {background:url(../img/plus_bg.png) repeat;width:470px; height:330px;}
+#profi .column div ul {padding:20px 0 0 36px;}
+#profi .column div ul li {padding-left:27px; min-height:15px; background:url(../img/minus.png) no-repeat left center; font:16px Tahoma; color:#ffffff; line-height:18px; margin-bottom:20px;}
+#profi .column div.right p {border-bottom:1px solid #68a466;} 
+#profi .column div.right ul li {background:url(../img/plus.png) no-repeat left center;}
+
+#about {padding:73px 20px 85px 20px; background: url(../img/sect_bg.png) repeat;}
+#about .column { position:relative;}
+#about div.left {width:470px;}
+#about div.left p.head {font: bold 35px 'Roboto'; line-height:18px;color:#ffffff; margin-bottom:26px;}
+#about div.left p.podhead {font: bold 24px 'Roboto'; line-height:18px; color:#5addfb; margin-bottom:54px;}
+#about div.left p {font:16px Tahoma; color:#ffffff;line-height:24px;}
+#about div.right {width:611px; height:373px; background: url(../img/white_phone.png) no-repeat; position:absolute; right:-79px; top:-50px;}
+
+#lic {padding-top:77px; background:url(../img/sect5_bg.jpg) center top; height:465px;}
+#lic .head {font:bold 35px 'Roboto'; color:#093844; text-align:center; margin-bottom:104px;}
+#lic div img {margin-right:30px;}
+#lic div img.last {margin-right:0px;}
+
+#why_we {padding-top:77px; background:url(../img/sect6_bg.jpg) center top; height:387px;}
+#why_we .head {font:bold 35px 'Roboto'; color:#ffffff; text-align:center; margin-bottom:75px;}
+#why_we article {float:left; width:204px; margin-right:39px;}
+#why_we article.last {margin-right:0;}
+#why_we article img {border:2px solid #ffffff; margin-bottom:21px;}
+#why_we article p {font:16px Tahoma; color:#ffffff; line-height:18px; text-align:center;}
+
+#we_do {padding-top:77px;padding-bottom:85px;}
+#we_do .head {font:bold 35px 'Roboto'; color:#093844; text-align:center; margin-bottom:104px;}
+#we_do article {width:158px; background:#565f62; height:57px; padding-left:110px;padding-right:20px; margin-right:37px; margin-bottom:57px; position:relative;}
+#we_do article.last {margin-right:0;}
+#we_do article p {width:158px; font:bold 16px 'Roboto'; color:#ffffff; line-height:18px; text-align:center; display:table-cell; vertical-align:middle; height:57px;}
+#we_do article figure {width:70px; height:69px; position:absolute; top:-13px; left:30px;}
+#we_do article #fig1 {background:url(../img/we_do1.jpg) no-repeat top center;}
+#we_do article #fig2 {background:url(../img/we_do2.png) no-repeat top center;}
+#we_do article #fig3 {background:url(../img/we_do3.png) no-repeat top center;}
+#we_do article #fig4 {background:url(../img/we_do4.png) no-repeat top center;}
+#we_do article #fig5 {background:url(../img/we_do5.png) no-repeat top center;}
+#we_do article #fig6 {background:url(../img/we_do6.png) no-repeat top center;}
+#we_do article #fig7 {background:url(../img/we_do7.png) no-repeat top center;}
+#we_do article #fig8 {background:url(../img/we_do8.png) no-repeat top center;}
+#we_do article #fig9 {background:url(../img/we_do9.png) no-repeat top center;}
+
+#skhema {padding-top:60px; background:url(../img/sect7_bg.jpg) center top; height:650px;}
+#skhema .head {font:bold 35px 'Roboto'; color:#ffffff; text-align:center; margin-bottom:75px;}
+#skhema_shell {display:table; width:100%; margin-bottom:65px;}
+#skhema_shell article {display:table-cell; vertical-align:middle; padding-right:13px;}
+#opis_skhema article {width:288px; margin-right:37px; margin-bottom:40px; float:left;}
+#opis_skhema article.last {margin-right:0;}
+#opis_skhema article p {font:bold 20px 'Roboto'; color:#4ad2fb; margin-bottom:15px;}
+#opis_skhema article p span {color:#d9f116;}
+#opis_skhema article p.main {padding:15px; background:#7c7c7a; font:16px tahoma; color:#ffffff;}
+
+#map_shell {position:relative; height:450px;}
+#map_cont {height:450px;}
+#map_opis {position:absolute; top:120px; left:50%; margin-left:-470px; background:url(../img/map_bg.png) repeat; width:374px; height:205px; padding:22px 18px 0 18px; }
+#map_opis #logotip {height:26px; background: url(../img/logotip.png) no-repeat top left;}
+#map_opis article { width:210px; margin-top:20px;}
+#map_opis article.last {width:164px;}
+#map_opis article p {font: 100 15px 'Roboto'; color:#555253; line-height:20px;}
+#map_opis article p span {font-weight:bold; text-transform:uppercase;}
+#parent_popup { display:none; background: url(../img/temfon.png) repeat; height: 100%;  position: fixed;  width: 100%;  z-index: 600;  top: 0;  left: 0; padding:0;}
+#popup {position: fixed;  top: 100px;  left: 50%; margin-left:-181px;}
+#popup form {margin:0;}

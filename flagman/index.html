@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Главная</title>
+    <meta name="viewport" content="width=480px" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="styles/reset-min.css" />
+	<link rel="stylesheet" type="text/css" href="styles/main.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="source/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css" media="screen" />
+	<script type="text/javascript" src="js/jquery.maskedinput-1.2.2.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+		$(document).ready(function(){
+				$('a[href*=#f]').bind("click", function(e){
+					var anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $(anchor.attr('href')).offset().top
+					}, 1000);
+					e.preventDefault();
+				});
+				return false;
+			});
+		
+		
+		
+		  $('.fancybox').fancybox();
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(function($) {
+			$.mask.definitions['~']='[+-]';
+			$('#phone').mask('+7-999-999-99-99');
+			$('#phone2').mask('+7-999-999-99-99');
+			$('#phone3').mask('+7-999-999-99-99');
+			$('#phone4').mask('+7-999-999-99-99');
+			$('#phone5').mask('+7-999-999-99-99');
+			$('#phone6').mask('+7-999-999-99-99');
+			$('#phone7').mask('+7-999-999-99-99');
+			$('#phone8').mask('+7-999-999-99-99');
+		});
+	</script>
+</head>
+<body>
+	<div class="wrapper_header">
+		<div class="wr_hd">
+		<header>
+			<div class="hd_left">
+				<a href="#" class="logo">
+					<img src="images/logo.jpg" alt="" />
+				</a>
+				<a href="#" class="logo2">
+					<img src="images/logo2.jpg" alt="" />
+				</a>
+			</div>
+			<div class="hd_right">
+				<p class="phone">(967) 198-67-60</p>
+				<p class="skype">globalslots</p>
+			</div>
+			<div class="clear"></div>
+		</header>
+		</div>
+	</div>
+	<div class="wrapper_sistems">
+		<div class="sistem">
+			<h2 class="h2">Онлайн системы для игорных клубов</h2>
+			<h3 class="h3">Подайте заявку на получение консультации - мы ответим в любое время дня и ночи!</h3>
+			<div class="left_sistem">
+				<div class="block_video">
+					<img src="images/video_img.png" alt="" />
+				</div>
+				<ul class="ul">
+					<li>
+						<p>Здесь Вы получаете цену за<br /> онлайн систему до 8%</p>
+					</li>
+					<li>
+						<p>Система может работать в браузере <br />или устанавливаться на компью</p>
+					</li>
+					<li>
+						<p>Мы настраиваем систему так, что клуб<br /> гарантированно работает в </p>
+					</li>
+					<li>
+						<p>Более 700 клубов сегодня законно и<br /> успешно зарабатывает с нами</p>
+					</li>
+					<li>
+						<p>Вы начинаете работать с <br />официальным партнером РАРИБ</p>
+					</li>
+					<li>
+						<img src="images/rarib.png" alt="" />
+					</li>
+				</ul>
+			</div>
+			<div class="right_sistem">
+				<div class="form">
+					<div class="top_form">
+						<h4>Узнать все о системах</h4>
+					</div>
+					<form name="Myform" action="sent.php" method="post">
+						<div>
+							<input type="text" name="name" placeholder="Имя" />
+							<input type="tel" name="tel" id="phone" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+							<input type="hidden" name="formid" value="1" />
+							<button></button>
+							<p>*Мы гарантируем 100% конфиденциальность</p>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="bottom_sistem">
+				<div class="left_bottom">
+					<div class="block_info">
+						<a href="#f1">
+							<img src="images/block_img1.png" alt="" />
+							<p>Игровые <br />Системы</p>
+						</a>
+					</div>
+					<div class="block_info">
+						<a href="#f2">
+							<img src="images/block_img2.png" alt="" />
+							<p>Безопастность<br /> Бизнеса</p>
+						</a>
+					</div>
+					<div class="block_info">
+						<a href="#f3">
+							<img src="images/block_img3.png" alt="" />
+							<p>Наши <br />гарантии</p>
+						</a>
+					</div>
+					<div class="block_info">
+						<a href="#f4">
+							<img src="images/block_img4.png" alt="" />
+							<p>Процент <br />зароботка</p>
+						</a>
+					</div>
+				</div>
+				<div class="right_bottom">
+					<img src="images/image_review.png" alt="" />
+					<div class="review">
+						<p>Обратитесь прямо сейчас и мы <br />раскажем Вам все что сами знаем.<br /> Мы перезвоним в течении 15 минут</p>
+					</div>
+				</div>
+			</div>
+			<span id="f1"></span>
+		</div>
+	</div>
+	<div class="wrapper_sistems2">
+		<div class="sistem2">
+			<div style="height: 50px;"></div>
+			<h2 class="h2">Выбери систему для своего интерактивного-клуба</h2>
+			<h3 class="h3">У нас есть три системы, которые удовлетворят любого клиента</h3>
+			<div>
+				<div class="block_sistem">
+					<div class="top_block_sistem">
+						<img src="images/casino.png" alt="" />
+					</div>
+					<ul>
+						<li>
+							<p>25 000 кредитов – подарок при <br />подключении</p>
+						</li>
+						<li>
+							<p>Возвращаем 50% от суммы первого пополнения</p>
+						</li>
+						<li>
+							<p>Возможность работы через браузер без скачивания на компьютер</p>
+						</li>
+						<li>
+							<p>Регулируемый процент (от 70 до 99)</p>
+						</li>
+						<li>
+							<p>Ограничения максимального win</p>
+						</li>
+						<li>
+							<p>Включение/Выключение CashBack клиенту 10%</p>
+						</li>
+						<li>
+							<p>Проработайте 3 месяца, и мы возвращаем Вам…</p>
+						</li>
+					</ul>
+					<a href="#popup1" class="fancybox">
+						<img src="images/opicanie_bg.png" alt="" />
+					</a>
+				</div>
+				<div class="block_sistem">
+					<div class="top_block_sistem">
+						<img src="images/global.png" alt="" />
+					</div>
+					<ul>
+						<li>
+							<p>30 000 кредитов – подарок при<br /> подключении</p>
+						</li>
+						<li>
+							<p>Регулируемый процент (от 50 до 99);</p>
+						</li>
+						<li>
+							<p>Ограничение максимального win</p>
+						</li>
+						<li>
+							<p>Включение/Выключение CashBack от 0 % до 50%.</p>
+						</li>
+						<li>
+							<p>Cashback может быть выплачен немедленно, или через 24 часа</p>
+						</li>
+						<li>
+							<p>Терминал ввода/вывода средств</p>
+						</li>
+					</ul>
+					<a href="#popup2" class="fancybox">
+						<img src="images/opicanie_bg.png" alt="" />
+					</a>
+				</div>
+				<div class="block_sistem">
+					<div class="top_block_sistem">
+						<img src="images/champion.png" alt="" />
+					</div>
+					<ul>
+						<li>
+							<p>Минимальное количество настроек – все готово сразу</p>
+						</li>
+						<li>
+							<p>5 000 рублей в подарок при подключении</p>
+						</li>
+						<li>
+							<p>CashBack клиенту в размере 10%</p>
+						</li>
+						<li>
+							<p>Установки собственного набора деноминаций - 0.01 до 2</p>
+						</li>
+						<li>
+							<p>Использование одного компьютера для 4 клиентов одновременно</p>
+						</li>
+						<li>
+							<p>Контроль Вашего бизнеса с компьютера/ планшета/телефона</p>
+						</li>
+						<li>
+							<p>Простой, интуитивно понятный и удобный пользовательский интерфейс</p>
+						</li>
+					</ul>
+					<a href="#popup3" class="fancybox">
+						<img src="images/opicanie_bg.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<span id="f2"></span>
+		</div>
+	</div>
+	<div class="wrapper_security">
+		<div class="security">
+			<div style="height: 20px;"></div>
+			<h2 class="h2">Обеспечте Безопасность своего бизнеса</h2>
+			<h3 class="h3">Мы предлагаем решения которые  </h3>
+			<div class="block_security security_one">
+				<div class="block_security_img">
+					<img src="images/security_img1.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Компьютеры без жесткого диска - определить какие виды деятельности могли осуществляться не  возможным.  </p>
+				</div>
+			</div>
+			<div class="block_security security_two">
+				<div class="block_security_img">
+					<img src="images/security_img4.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Предоставляется юридическая помощь в организации работы клубов.</p>
+				</div>
+			</div>
+			<div class="block_security security_three">
+				<div class="block_security_img">
+					<img src="images/security_img2.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Терминал самообслуживания – автоматический ввод/вывод средств без участия кассира. </p>
+				</div>
+			</div>
+			<div class="block_security security_four">
+				<div class="block_security_img">
+					<img src="images/security_img5.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Multiseat – один системный блок, для 2-10 игровых мест. Экономия на одном игровом месте 3960 рублей</p>
+				</div>
+			</div>
+			<div class="block_security security_five">
+				<div class="block_security_img">
+					<img src="images/security_img3.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Красная кнопка – одним кликом <br />администратора клуба у всех клиентов мониторы переключаются на игру не на деньги.</p>
+				</div>
+			</div>
+			<div class="block_security security_six">
+				<div class="block_security_img">
+					<img src="images/security_img6.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>У нас самая низкая цена на этом рынке! Если найдете дешевле мы сделаем дешевле нежели вы найдете!</p>
+				</div>
+			</div>
+			<h4>У нас самая низкая цена на этом рынке! Если найдете <br />дешевле нежели вы найдете</h4>
+			<a href="#popup4" class="fancybox cl_popup">
+				<img src="images/sistem_button_bg.png" alt="" />
+			</a>
+		</div>
+		<span id="f3"></span>
+	</div>
+	<div class="wrapper_garant">
+		<div class="garant">
+			<div style="height: 20px;"></div>
+			<h2 class="h2">Мы гарантируем результат, а именно</h2>
+			<h3 class="h3">В случае не достижения цели мы компенсируем затраченые средства</h3>
+			<div class="block_security security_one">
+				<div class="block_security_img">
+					<img src="images/garant_img1.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Мы гарантируем что с первой минуты работы и всегда система будет работать только в плюс</p>
+				</div>
+			</div>
+			<div class="block_security security_two">
+				<div class="block_security_img">
+					<img src="images/garant_img3.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Если к Вам пришел *крупный клиент*, а<br /> депозита у вас недостаточно - мы всегда<br /> дадим нужную сумму в долг. Зарабаты-<br />вайте максимум!</p>
+				</div>
+			</div>
+			<div class="block_security security_three">
+				<div class="block_security_img">
+					<img src="images/garant_img2.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>Отвечаем на заявку или звонок в течении<br /> 15 минут или платим 100</p>
+				</div>
+			</div>
+			<div class="block_security security_four">
+				<div class="block_security_img">
+					<img src="images/garant_img4.jpg" alt="" />
+				</div>
+				<div class="block_security_ttle">
+					<p>В случае потери депозита, бонусных игр и <br />другого по любой причине - мы компенси-<br />руем Вам потерянные клиентом кредиты.</p>
+				</div>
+			</div>
+			<div class="garant_block">
+				<div class="garant_left">
+					<img src="images/garant_img.jpg" alt="" />
+				</div>	
+				<div class="garant_center">
+					<h4>Гарантия возврата денег</h4>
+					<p>Если качество продукта Вас не устроит, мы вернем<br /> Вам деньги за все количество депозита в любое<br /> время. Через день сотруднечиства или год</p>
+				</div>
+				<div class="garant_right">
+					<a href="#popup4" class="fancybox cl_popup">
+						<img src="images/sistem_button_bg.png" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<span id="f4"></span>
+	</div>
+	<div class="wrapper_plamens">
+		<div class="plamens">
+			<div style="height: 20px;"></div>
+			<h2 class="h2">Какой процент Вам надо будет платить за систему?</h2>
+			<h3 class="h3">Чем больше оборот у Вашего клуба тем меньше процент отката</h3>
+			<div class="tab_menu">
+				<ul>
+					<li class="li_one active_tab_one">
+						<a href="#">GlobalSlots</a>
+					</li>
+					<li class="li_two">
+						<a href="#">WinWin</a>
+					</li>
+					<li class="li_three">
+						<a href="#">Chempion</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab_block globalSlots">
+				<div class="block_tab">
+					<div class="ttle_tab">
+						<h4>Офлайн цена системы 15 % При заказе через этот сайт цена значительно ниже - до 8%</h4>
+						<p>Глобалслотс - онлайн система премиум сегмента. Цена в 15% полностью оправдана удовольствием Ваших клиентов и ростом доходов клуба. Продавая через сайт мы изначально даем цену ниже. Отправляйте заявку сейчас и получите очень выгодное предложение цены.</p>
+					</div>
+					<div class="blokc_tab_img">
+						<img src="images/skidka.jpg" alt="" class="skidka" />
+					</div>
+				</div>
+				<div class="block_tab tab_two">
+					<img src="images/bonus.jpg" alt="" class="bonus" />
+					<span>При подключении <br />30 000 кредитов в подарок.</span>
+					<a href="#popup5" class="fancybox cl_popup">
+						<img src="images/sistem_button_bg.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="tab_block winwin">
+				<div class="block_tab">
+					<div class="ttle_tab">
+						<h4>Офлайн цена системы 15 % При заказе через этот сайт цена значительно ниже - до 10%</h4>
+						<p>ВинВин - онлайн система премиум сегмента. Цена в 15% полностью оправдана удовольствием Ваших клиентов и ростом доходов клуба. Продавая через сайт мы изначально даем цену ниже. Отправляйте заявку сейчас и получите очень выгодное предложение цены.</p>
+					</div>
+					<div class="blokc_tab_img">
+						<img src="images/skidka.jpg" alt="" class="skidka" />
+					</div>
+				</div>
+				<div class="block_tab tab_two">
+					<img src="images/bonus.jpg" alt="" class="bonus" />
+					<span>При подключении <br />30 000 кредитов в подарок.</span>
+					<a href="#popup6" class="fancybox cl_popup">
+						<img src="images/sistem_button_bg.png" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="tab_block chempion">
+				<div class="block_tab">
+					<div class="ttle_tab">
+						<h4>Офлайн цена системы 10 % При заказе через этот сайт цена значительно ниже - до 6%</h4>
+						<p>Чемпион - лидер по простоте и удобстве на рынке России. Для старта клуба все готово изначально. Минимум настроек и сложностей. Цена в 10% полностью оправдана удовольствием Ваших клиентов и высоким доходом клуба. Продавая через сайт мы даем цену еще ниже. Отправляйте заявку сейчас и получите очень выгодное предложение цены</p>
+					</div>
+					<div class="blokc_tab_img">
+						<img src="images/skidka.jpg" alt="" class="skidka" />
+					</div>
+				</div>
+				<div class="block_tab tab_two">
+					<img src="images/bonus.jpg" alt="" class="bonus" />
+					<span>При подключении <br />30 000 кредитов в подарок.</span>
+					<a href="#popup7" class="fancybox cl_popup">
+						<img src="images/sistem_button_bg.png" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="obvertka_footer1">
+			<div class="footer_1">
+				<div class="left_blockFooter">
+					<img src="images/map.jpg" alt="" >
+					<p><span>Контактная информация</span>Номер телефона: +7 967 198 6760 <br />  Е-мейл: go@gslots.net <br /> Skype: globalslots_pavel <br /> Адрес: пер.Орликовв</p>
+				</div>
+				<div class="right_blockFooter">
+					<form name="myform" action="sent.php" method="post">
+						<div>
+							<label>Оставить отзыв о сайте</label>
+							<br />
+							<div class="textarea">
+							<textarea cols="" rows="" name="textarea"></textarea>
+							<input type="hidden" name="formid" value="отзыв" />
+							<div class="button">
+								<button></button>
+							</div>
+							</div>
+						</div>
+					</form>
+				</div>
+                <div class="clear"></div>
+			</div>
+		</div>
+		<div class="obvertka_footer2">
+			<div class="footer_2">
+				<ul>
+					<li>
+						<a href="#">Главная </a>|
+					</li>
+					<li>
+						<a href="#">Системы </a>|
+					</li>
+					<li>
+						<a href="#">Безопасность и Економия </a>|
+					</li>
+					<li>
+						<a href="#">Гарантия </a>|
+					</li>
+					<li>
+						<a href="#">Какой процент оплаты </a>|
+					</li>
+					<li>
+						<a class="last_a" href="#">Игры</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="obvertla_footer3">
+			<div class="footer_3">
+				<a href="#">GlobalSlots 2014</a>
+				<a href="#">Права использования</a>
+				<a class="last_a2" href="#">Соглашение</a>
+			</div>
+		</div>
+	</footer>
+	
+	<div class="vipad_menu1" id="popup1">
+		<div class="wrap_popup">
+			<div class="top_block">
+				<p class="homepage">Описание системы WinWin</p>
+			</div>
+			<div class="wr_content">
+			<div class="left_blocks">
+				<div class="block_ul">
+					<p class="homepage_2">Достоинства игровой системы Global slots:</p>
+					<ul>
+						<li>
+							<p>Проработайте 3 месяца, и мы возвращаем Вам 10% от израсходованных средств</p>
+						</li>
+						<li>
+							<p>Возвращаем 50% от суммы первого пополнения<br />25 000 рублей в подарок при подключении</p>
+						</li>
+						<li>
+							<p>Регулируемый процент отдачи (от 70 до 99).<br />Набора деноминаций от 00,1 до 100  <br />Возможность работы через браузер без скачивания на компьютер<br />Включение/Выключение CashBack в размере 10%</p>
+						</li>
+						<li>
+							<p>Ограничение максимального win<br />Возможность прямого начисления на терминал, пополнение через банкомат, купюроприемник или с помощью кода</p>
+						</li>
+						<li>
+							<p>Использование одного компьютера для 4 клиентов одновременно</p>
+						</li>
+						<li>
+							<p>Контроль Вашего бизнеса с компьютера/ планшета/телефона</p>
+						</li>
+						<li>
+							<p>Работы в полноэкранном режиме (без экранного лобби)</p>
+						</li>
+						<li>
+							<p>Система полностью легальна и соответствует всем правовым нормам.</p>
+						</li>
+						<li>
+							<p>Промежуточный сервер обновлений для экономии траффика при обновлениях</p>
+						</li>
+						<li>
+							<p>Простой, интуитивно понятный и удобный пользовательский интерфейс</p>
+						</li>
+						<li>
+							<p>Возможность переназначения горячих клавиш</p>
+						</li>
+						<li>
+							<p>Рабочий процесс происходит на удаленном сервере за пределами РФ. Это обеспечивает бесперебойную работу и надежную защиту от DDOS атак.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="system">
+					<p class="homepage_2 homepage_3">Системные требования:</p>
+					<div class="system_left">
+						<p class="p_num1">Windows 7/8/Vista/XP или Linux (x86_32)</p>
+						<p class="p_num2">Процессор :celeron D от 1.7Ггц, </p>
+						<p class="p_num3">видео карта поддерживающая аппаратное ускорение.</p>
+					</div>
+					<div class="system_right">
+						<p class="p_num4">Разрешение экрана 1024х768 </p>
+						<p class="p_num5">Оперативка : 1.5-2гб памяти.  </p>
+						<p class="p_num6">3 ГБ свободного места на диске</p>
+					</div>
+				</div>
+			</div>
+			<div class="right_blocks">
+				<div class="block_sale">
+					<p class="sale_p">Процент платы до:</p>
+					<img src="images/sale.png" alt="">
+					<p class="podarok_p">30 000 рублей в подарок </p>
+				</div>
+				<div class="block_form">
+					<div class="form">
+						<h6 class="h6">Подключить систему</h6>
+						<form name="Myform" action="sent.php" method="post">
+							<div>
+								<input type="text" name="name" placeholder="Имя" />
+								<input type="tel" name="tel" id="phone2" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+								<input type="hidden" name="formid" value="3" />
+								<button></button>
+								<p>*Мы гарантируем 100% конфиденциальность</p>
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	
+	<div class="vipad_menu1" id="popup2">
+		<div class="wrap_popup">
+			<div class="top_block">
+				<p class="homepage">Описание системы GLOBALSLOTS</p>
+			</div>
+			<div class="left_blocks">
+				<div class="block_ul">
+					<p class="homepage_2">Достоинства игровой системы Global slots:</p>
+					<ul>
+						<li>
+							<p>30 000 рублей в подарок при подключении</p>
+						</li>
+						<li>
+							<p>Регулируемый процент (от 50 до 99)</p>
+						</li>
+						<li>
+							<p>Ограничение максимального win</p>
+						</li>
+						<li>
+							<p>Включение/Выключение CashBack от 0 % до 50%.</p>
+						</li>
+						<li>
+							<p>Включение/Выключение CashBack от 0% до 50%<br />Cashback может быть выплачен немедленно, или через 24 часа</p>
+						</li>
+						<li>
+							<p>Возможность прямого начисления на терминал, пополнение через банкомат, купюроприемник или с помощью кода</p>
+						</li>
+						<li>
+							<p>Установки собственного набора деноминаций - от 0.0001 до 4</p>
+						</li>
+						<li>
+							<p>Использование одного компьютера для 4 клиентов одновременно</p>
+						</li>
+						<li>
+							<p>Контроль Вашего бизнеса с компьютера/ планшета/телефона</p>
+						</li>
+						<li>
+							<p>Возможность работы в полноэкранном режиме (без экранного лобби)</p>
+						</li>
+						<li>
+							<p>Система полностью легальна и соответствует всем правовым нормам.</p>
+						</li>
+						<li>
+							<p>Промежуточный сервер обновлений для экономии траффика при обновлениях</p>
+						</li>
+						<li>
+							<p>Простой, интуитивно понятный и удобный пользовательский интерфейс</p>
+						</li>
+						<li>
+							<p>Возможность переназначения горячих клавиш</p>
+						</li>
+						<li>
+							<p>Процесс работы происходит на удаленном сервере за пределами РФ. Это обеспечивает бесперебойную работу и надежную защиту от DDOS атак.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="system">
+					<p class="homepage_2 homepage_3">Системные требования:</p>
+					<div class="system_left">
+						<p class="p_num1">Windows 7/8/Vista/XP или Linux (x86_32)</p>
+						<p class="p_num2">PPentium3 1 ГГц</p>
+						<p class="p_num3">Видеокарта с 256 Мб памяти  </p>
+					</div>
+					<div class="system_right">
+						<p class="p_num4">Разрешение экрана 1024х768 </p>
+						<p class="p_num5">512 Мб оперативной памяти</p>
+						<p class="p_num6">2,5 ГБ свободного места на диске</p>
+					</div>
+				</div>
+			</div>
+			<div class="right_blocks">
+				<div class="block_sale">
+					<p class="sale_p">Процент платы до:</p>
+					<img src="images/sale.png" alt="">
+					<p class="podarok_p">30 000 рублей в подарок </p>
+				</div>
+				<div class="block_form">
+					<div class="form">
+						<h6 class="h6">Подключить систему</h6>
+						<form name="Myform" action="sent.php" method="post">
+							<div>
+								<input type="text" name="name" placeholder="Имя" />
+								<input type="tel" name="tel" id="phone3" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+								<input type="hidden" name="formid" value="4" />
+								<button></button>
+								<p>*Мы гарантируем 100% конфиденциальность</p>
+							</div>
+						</form>
+					</div>	
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	
+	<div class="vipad_menu1" id="popup3">
+		<div class="wrap_popup">
+				<div class="top_block">
+					<p class="homepage">Описание системы ChampionCasino</p>
+				</div>
+				<div class="left_blocks">
+					<div class="block_ul">
+						<p class="homepage_2">Достоинства игровой системы ChampionCasino:</p>
+						<ul>
+							<li>
+								<p>5 000 рублей в подарок при подключении</p>
+							</li>
+							<li>
+								<p>CashBack клиенту в размере 10%</p>
+							</li>
+							<li>
+								<p>Установки собственного набора деноминаций - 0.01 до 2</p>
+							</li>
+							<li>
+								<p>Возможность прямого начисления на терминал или с помощью кода</p>
+							</li>
+							<li>
+								<p>Регулируемый процент отдачи клуба</p>
+							</li>
+							<li>
+								<p>Использование одного компьютера для 4 клиентов одновременно</p>
+							</li>
+							<li>
+								<p>Контроль Вашего бизнеса с компьютера/ планшета/телефона</p>
+							</li>
+							<li>
+								<p>Возможность работы в полноэкранном режиме (без экранного лобби)<br />Возможность переназначения горячих клавиш</p>
+							</li>
+							<li>
+								<p>Система полностью легальна и соответствует всем правовым нормам</p>
+							</li>
+							<li>
+								<p>Промежуточный сервер обновлений для экономии траффика при обновлениях</p>
+							</li>
+							<li>
+								<p>Простой, интуитивно понятный и удобный пользовательский интерфейс</p>
+							</li>
+							<li>
+								<p>Игровой процесс происходит на удаленном сервере за пределами РФ. Это обеспечивает бесперебойную работу и надежную защиту от DDOS атак.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="system">
+						<p class="homepage_2 homepage_3">Системные требования:</p>
+						<div class="system_left">
+							<p class="p_num1">Windows 7/8/Vista/XP или Linux (x86_32) </p>
+							<p class="p_num2">Pentium3 1 ГГц </p>
+							<p class="p_num3">Видеокарта с 256 Мб памяти  </p>
+						</div>
+						<div class="system_right">
+							<p class="p_num4">Разрешение экрана 1024х768 </p>
+							<p class="p_num5">512 Мб оперативной памяти </p>
+							<p class="p_num6">2,5 ГБ свободного места на диске</p>
+						</div>
+					</div>
+				</div>
+				<div class="right_blocks">
+					<div class="block_sale">
+						<p class="sale_p">Процент платы до:</p>
+						<img src="images/sale.png" alt="">
+						<p class="podarok_p">30 000 рублей в подарок </p>
+					</div>
+					<div class="block_form">
+						<div class="form">
+						<h6 class="h6">Подключить систему</h6>
+							<form name="Myform" action="sent.php" method="post">
+								<div>
+									<input type="text" name="name" placeholder="Имя" />
+									<input type="tel" name="tel" id="phone4" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+									<input type="hidden" name="formid" value="4" />
+									<button></button>
+									<p>*Мы гарантируем 100% конфиденциальность</p>
+								</div>
+							</form>
+						</div>	
+					</div>
+				</div>
+		</div>
+	</div>
+	
+	<div class="modal_form" id="popup4">
+		<div class="wrap_popup4_">
+			<div class="form">
+				<div class="top_form">
+					<h4>Подключить систему</h4>
+				</div>
+				<h5>Если мы не перезвоним Вам в течении 15 минут <br /> мы выплатим Вам 1000 рублей</h5>
+				<form name="Myform" action="sent.php" method="post">
+					<div>
+						<input type="text" name="name" placeholder="Имя" />
+						<input type="tel" name="tel" id="phone5" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+						<input type="hidden" name="formid" value="5" />
+						<button></button>
+						<p>*Мы гарантируем 100% конфиденциальность</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal_form" id="popup5">
+		<div class="wrap_popup4_">
+			<div class="form">
+				<div class="top_form">
+					<h4>Подключить систему</h4>
+				</div>
+				<h5>Если мы не перезвоним Вам в течении 15 минут <br /> мы выплатим Вам 1000 рублей</h5>
+				<form name="Myform" action="sent.php" method="post">
+					<div>
+						<input type="text" name="name" placeholder="Имя" />
+						<input type="tel" name="tel" id="phone6" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+						<input type="hidden" name="formid" value="GlobalSlots" />
+						<button></button>
+						<p>*Мы гарантируем 100% конфиденциальность</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal_form" id="popup6">
+		<div class="wrap_popup4_">
+			<div class="form">
+				<div class="top_form">
+					<h4>Подключить систему</h4>
+				</div>
+				<h5>Если мы не перезвоним Вам в течении 15 минут <br /> мы выплатим Вам 1000 рублей</h5>
+				<form name="Myform" action="sent.php" method="post">
+					<div>
+						<input type="text" name="name" placeholder="Имя" />
+						<input type="tel" name="tel" id="phone7" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+						<input type="hidden" name="formid" value="WinWin" />
+						<button></button>
+						<p>*Мы гарантируем 100% конфиденциальность</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="modal_form" id="popup7">
+		<div class="wrap_popup4_">
+			<div class="form">
+				<div class="top_form">
+					<h4>Подключить систему</h4>
+				</div>
+				<h5>Если мы не перезвоним Вам в течении 15 минут <br /> мы выплатим Вам 1000 рублей</h5>
+				<form name="Myform" action="sent.php" method="post">
+					<div>
+						<input type="text" name="name" placeholder="Имя" />
+						<input type="tel" name="tel" id="phone8" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="" placeholder="Номер телефона" />
+						<input type="hidden" name="formid" value="Chempion" />
+						<button></button>
+						<p>*Мы гарантируем 100% конфиденциальность</p>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

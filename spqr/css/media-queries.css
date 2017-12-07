@@ -1,0 +1,59 @@
+@media screen and (max-width: 1400px){
+    /**/
+    .column {min-width:1000px; margin:0 auto;}
+    #features {min-width:1000px; margin: -218px auto 0 auto;}
+}
+@media screen and (max-width: 1024px){
+    /**/
+    .column {width:100%;min-width:768px; margin:0 auto;}
+    #features {width:100%;min-width:768px; margin: -218px auto 0 auto;}
+    #content .jshowoff-prev {margin-left:0;}
+    #content .jshowoff-next {margin-right:0;}
+}
+@media screen and (max-width: 783px){
+    /**/
+    .column {min-width:480px; margin:0 auto;}
+    #features {min-width:480px; margin: -218px auto 0 auto;}
+    #content .jshowoff .slide_opis {padding:0 10%;width:80%;}
+    #predl { -moz-background-size:100%; -webkit-background-size:100%; -o-background-size:100%; background-size:100%;}
+    #predl figure {width:48%;}
+    #left_side {width:100%;}
+    #right_side {width:100%;}
+    #right_side img {height: 100%; width:auto; float:left; margin-right:10px;}
+    #right_side .phase {width:30%; margin-right:3%; float:left;}
+    #right_side .phase img {width:100%; height:auto; margin-right:0;}
+    #foot_kont #soc_set, #foot_kont ul {float:none;}
+    footer article {width:44%;margin-left:3%; margin-right:3%; float:left;}
+    footer {height:520px; margin-top:-520px; display:block;}
+    #content {padding-bottom:520px;}
+}
+@media screen and (max-width: 703px){
+    /**/
+    header {height:180px;}
+    #logo {float:none; display:inline-block; margin-left:30%; margin-right:auto; width:128px;}
+    #kontakt {float:none; margin:10px auto;}
+    .column {min-width:480px; margin:0 auto;}
+    #features {min-width:480px; margin: -39px auto 0 auto;height:68px;}
+    #features div .img_wrap{display:none;}
+    #content .jshowoff .slide_opis {top:0;}
+    p.jshowoff-controls {top:0;}
+}
+@media screen and (max-width: 500px){
+    /**/
+    .column {margin:0 auto; min-width:1px;}
+    #features {display:none;}
+    #content .jshowoff .slide_opis {display:none;}
+    #predl figure {width:100%;}
+    #left_side {width:100%;}
+    #right_side {width:100%;}
+    #right_side img {height: auto; width:100%; float:none; margin-right:0px;}
+    footer article {width:60%;margin-left:20%; margin-right:auto;}
+    footer {height:1040px; margin-top:-1040px;}
+    #content {padding-bottom:1040px;}
+    p.jshowoff-controls {display:none;}
+    #right_side .phase {width:100%; margin-right:0;}
+    #content article {width:100%; margin-right:0;}
+    nav {height:180px;}
+    nav ul {display:block;}
+    nav ul li {display:list-item;}
+}

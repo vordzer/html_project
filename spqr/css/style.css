@@ -1,0 +1,100 @@
+@import url(reset.css);
+@charset "utf-8";
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+html,body{ height: 100%; margin:0px; padding:0px; background:#000000 url(../img/bg.png) repeat-x; -moz-background-size: 100% auto; -webkit-background-size: 100% auto; -o-background-size: 100% auto;  background-size:100% auto; font-family:sans-serif; font-size:14px; color:#8b8b8b; text-align:left;	}
+.column {width:71.42%;margin:0 auto; overflow:hidden;}
+.clear {clear: both;}
+.left {float: left;}
+.right {float:right;}
+body > #wrapper {
+height: auto;
+min-height: 100%;
+}
+
+.clearfix {
+display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+height: 1%;
+}
+.clearfix {
+display: block;
+}
+/* End hide from IE-mac */
+
+/*общие дл€ сайта*/
+#wrapper { height:100%;}
+#content{padding-bottom:260px;}
+/*шапка*/
+header {height: 120px; position:relative; z-index:5;}
+#logo {padding-top:20px; float:left; margin-left:5%}
+#logo a{display:inline-block;padding-left:98px; height:56px; padding-top:22px; background: url(../img/logo.png) no-repeat; color:#ffffff; font:36px 'Prosto One'; text-decoration:none;}
+#kontakt {width:298px; margin-top:36px; float:right;}
+#kontakt a { text-decoration:none;display:block; width:85.23%; font:16px 'Prosto One'; color:#ffffff; padding-left:14%; margin-bottom:5px;}
+#kontakt a:hover { color:#ffb800;}
+#phone {background: url(../img/phone.png) no-repeat left center; -moz-background-size:auto 100%; -webkit-background-size:auto 100%; -o-background-size: auto 100%;  background-size:auto 100%; }
+#skype {background: url(../img/skype.png) no-repeat left center; -moz-background-size:auto 100%; -webkit-background-size:auto 100%; -o-background-size: auto 100%;  background-size:auto 100%; }
+
+/*навигаци€*/
+nav {width:100%; height:58px; border-top:1px solid #262626; border-bottom:1px solid #262626; position:relative; z-index:5; background: url(../img/panel_bg.png) repeat;}
+nav ul {display:table; width:100%;}
+nav ul li {display:table-cell; vertical-align:middle; height:58px;padding-left:1px; background:#2b2b2b;}
+nav ul li.last {padding-right:1px;}
+nav ul li a {display:block; width:100%; height:44px; padding-top:14px; background: url(../img/nav_ul_bg.jpg) repeat-x; text-align:center; color:#ffffff; text-decoration:none; font:18px 'Open Sans'}
+nav ul li a:hover {background: url(../img/nav_ul_bg_hov.jpg) repeat-x; color:#ffb800;}
+
+/*подвал*/
+footer {background:#1d1d1d; height:260px; margin-top:-260px; display:table; width:100%;}
+footer article {display:table-cell; width:25%; margin-top:30px; vertical-align:top; padding-top:30px;}
+
+#foot_kont #soc_set, #foot_kont ul{float:right;}
+footer article p { margin-bottom:19px; }
+footer article p a{font:24px 'Prosto One'; color:#ffb800; text-shadow: 1px 1px 0 #000000;text-decoration:none;}
+footer article ul li a {display:inline-block; padding-left:16px; background: url(../img/foot_arr.png) no-repeat center left; margin-bottom:8px; font:14px 'Open Sans'; color:#cccccc; text-shadow:1px 1px 0 #000000; text-decoration:none;}
+footer article ul li a:hover {color:#ffffff;}
+#soc_set {width:235px;}
+.set {display:inline-block; margin-left: 5%; float:left;}
+.set a {width:41px; height:41px; border-radius: 20px; display:inline-block; -moz-background-size:auto 100%; -webkit-background-size:auto 100%; -o-background-size: auto 100%;  background-size:auto 100%;}
+#foot_mail a{background: url(../img/foot_mail.png) no-repeat center center;}
+#foot_skype a{background: url(../img/foot_skype.png) no-repeat center center;}
+#foot_inst a{background: url(../img/foot_in.png) no-repeat center center;}
+#foot_twit a{background: url(../img/foot_tw.png) no-repeat center center;}
+#foot_kont ul {margin-top:18px; width:90%;}
+#foot_kont ul li {width:auto; min-height:28px;}
+#foot_kont ul li a {display:inline-block; padding-left:19px; margin-bottom:0px; font:14px 'Open Sans'; color:#cccccc; text-shadow:1px 1px 0 #000000; text-decoration:none;}
+#foot_kont ul li a:hover {color:#ffb800;}
+#footer_mail {background:  url(../img/footer_mail.png) no-repeat center left;}
+#footer_phone {background:  url(../img/footer_phone.png) no-repeat center left;}
+#footer_skype {background:  url(../img/footer_skype.png) no-repeat center left;}
+#footer_address {background:  url(../img/footer_adress.png) no-repeat  center left;}
+
+/*контент*/
+#content {padding-top:38px;}
+#left_side {width:74.6%; float:left; padding-bottom:20px;}
+h1 {font:24px 'Open Sans'; font-weight:500; color:#ffffff; margin-bottom:13px; }
+h2 {font:18px 'Open Sans'; font-weight:500; color:#ffb800; margin-bottom:13px; }
+#content p{color:#cccccc; font: 14px 'Open Sans'; line-height:20px; margin-bottom:25px;}
+#content article {width:48%; margin-right:2%; float:left;}
+#content ol {margin-left:20px;}
+#content img {width:100%; height:auto; margin-bottom:25px;}
+#content ol li, h5 {font:14px 'Open Sans'; color:#ffffff;}
+#right_side {float:right; width:23.5%; padding-bottom:20px;}
+#right_side figure {margin-bottom:10px;}
+#content #right_side img {margin-bottom:10px;}
+#content #right_side p {color:#cccccc; margin-bottom:10px; font-size:12px;}
+#content #right_side a {color:#ffb800; font:12px 'Open Sans';}
+#content #right_side .dal, #content #left_side .dal {display:inline-block; padding-right:13px; background: url(../img/arr_a.png) no-repeat center right; color:#ffffff; text-decoration:none;}
+#predl {border-top:1px solid #26292a;width:100%; background: url(../img/predl.jpg) repeat;  margin-bottom:30px; border-bottom:1px solid #292929;}
+#predl p {color:#cccccc; font: 14px 'Open Sans'; line-height:20px;}
+#predl figure {width:23.5%; float:left; position:relative; margin-right:2%; padding-top:40px;}
+#predl figure.last {margin-right:0;}
+#content #predl img {margin-bottom:0;}
+#predl a {display:block; height:auto; margin-bottom:20px; text-decoration:none;}
+#predl a .hid_img {position:absolute; top:40px; left:0; display:none; z-index:3;}
+#predl a:hover .hid_img {display:block;} 
+
+

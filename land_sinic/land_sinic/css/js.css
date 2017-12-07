@@ -1,0 +1,103 @@
+#sliderim {
+	background: url(../img/bun_bg.png) repeat;
+	position: relative;
+	overflow: hidden;
+	width: 1000px;
+	height: 511px;}
+#container {position:relative; height:511px; width:1000px;}
+.sliderbutton {float:left; width:25px; height:235px; cursor:pointer}
+#slider {float:left; position:relative; overflow:auto;height:511px; width:1000px;}
+#slider ul {position:absolute; list-style:none; top:0; left:0}
+#slider li {float:left;height:511px; width:1000px;}
+.slide {width:1000px; height:511px; position:relative;}
+.osn_pic {
+    float:left;
+    width:730px;
+    height:488px;
+    margin:11px 19px 0 11px;
+}
+.top_pic {
+    width:230px;
+    height:314px;
+    margin-top:11px;
+}
+.bot_pic {
+    width:230px;
+    height:155px;
+    margin-top:18px;
+}
+.slide_opis {
+    z-index:16;
+    position:absolute;
+    left:0px;
+    bottom:20px;
+    width:470px;
+    height:116px;
+    padding:10px;
+}
+.slide_opis h4 {
+    height:64px;
+    overflow:hidden;
+    font:24px 'Corbelb';
+    color:#000000;
+    text-transform:uppercase;
+    line-height:28px;
+    text-shadow:0px 0px 0px #eeeeee;
+}
+.slide .slide_opis p{
+    font:18px arial;
+    color:#000000;
+    padding:0; margin:13px 0;
+}
+.slide .slide_opis a{
+    font:14px arial;
+    color:#ffffff;
+    text-decoration:underline;
+}
+.slide .slide_opis a:hover{
+    text-decoration:none;
+}
+
+.slide h2, .slide p {
+	font-size: 18px;
+	padding: 15px 20px 0px;
+	margin: 0;
+	}
+#wrap_pag {
+    background:url(../img/slide_opis_bg.png) no-repeat;
+	position: absolute;
+    left:0px;
+    bottom:0px;
+    width:490px;
+    height:21px;
+	padding:135px 0 0 0;
+    z-index:15;
+    
+}
+.pagination {
+	position: absolute;
+    right: 10px;
+    bottom:8px;
+	padding:0;
+    z-index:20;}
+.pagination li {
+    cursor:pointer;
+    right:5px;
+    top:0;
+	display: block;
+	background-color: #ffdb35;
+	margin: 0 0 0 5px;
+	float: left;
+	text-decoration: none;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+    border-radius:6px;
+	outline: none;
+    height:12px;
+    width:12px;
+    text-indent: -100000px;
+    box-shadow: inset 1px 1px 1px #cccccc;}
+.pagination li:hover, li.current {
+	background-color: #fff;
+    box-shadow:none;
+	color: #000;}

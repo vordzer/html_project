@@ -1,0 +1,115 @@
+/*-- jShowOff module styles --*/
+
+
+#features{
+	overflow: hidden;
+	width: 100%;
+    margin-top:-218px;
+    z-index:1;
+    height:640px;
+    position:relative;
+	}
+#features .img_wrap {
+    text-align:center;
+}
+.jshowoff {
+	width: 100%;
+	}
+.jshowoff img {
+    height:640px!important ;
+    width: auto !important;
+	}
+
+#content .jshowoff .slide_opis {
+    display:block;
+    width: 100%;
+    text-align:center;
+    padding-top:10px;
+	font: 24px 'Open Sans';
+    color:#ffffff;
+    position:absolute;
+    top:580px;
+    left:0;
+    display:block;
+    min-height: 49px;
+    z-index:10;
+    border-top:1px solid #263337;
+    background: url(../img/panel_bg.png) repeat;
+}
+.eddie {
+	float: right;
+	padding: 15px 20px 15px 20px;
+	}
+.jshowoff p.jshowoff-slidelinks {
+	position: absolute;
+    display:none;
+    width:100%;
+	top:-66px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+	}
+.jshowoff-slidelinks a, .jshowoff-controls a {
+	display: table-cell;
+    width:25%;
+    text-align:center;
+    vertical-align:middle;
+    height: 28px;
+    text-decoration:none;
+	color: #b8d3c3;
+	outline: 1px solid #e3eae4;
+	font: 14px 'DINPro-light';
+	}
+.jshowoff-slidelinks a:hover {
+	background-color: #e3eae4;
+    color:#003829;
+	}
+.jshowoff-slidelinks a.jshowoff-active, .jshowoff-slidelinks a.jshowoff-active:hover {
+	background-color: #e3eae4;
+    color:#003829;
+	}
+
+p.jshowoff-controls {
+    display:block;
+    width:100%;
+    position:absolute;
+    top:580px;
+    left:0;
+    padding:0;
+    margin:0;
+    z-index:5;
+	overflow: auto;
+    height: 59px;
+	}
+#panel {
+    
+}
+#content .jshowoff-prev {
+    float:left;
+    margin-left:14.29%;
+    width:45px;
+    height:45px;
+    outline:none;
+    margin-top:7px;
+    text-indent:-10000px;
+    background: url(../img/back.png) no-repeat;
+ }
+#content .jshowoff-prev:hover {
+    background: url(../img/back_hov.png) no-repeat;
+ }
+#content .jshowoff-play {
+    display:none;
+ }
+#content .jshowoff-next {
+    float:right;
+    margin-right:14.29%;
+    width:45px;
+    text-indent:-10000px;
+    margin-top:7px;
+    height:45px;
+    outline:none;
+    background: url(../img/forw.png) no-repeat;
+ }
+#content  .jshowoff-next:hover {
+    background: url(../img/forw_hov.png) no-repeat;
+ }

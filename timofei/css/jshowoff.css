@@ -1,0 +1,81 @@
+/*-- jShowOff module styles --*/
+
+
+#features{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+    margin-top:77px;
+	}
+.jshowoff {
+	width: 100%;
+	}
+.jshowoff div {	
+	width: 100%;
+	}
+.jshowoff div, .jshowoff img, .jshowoff {
+	}
+#basicFeatures, .jshowoff.basicFeatures, .jshowoff.basicFeatures img, .jshowoff.basicFeatures div {
+	}
+.jshowoff p {
+	font: 14px 'DINPro-light';
+    color:#e3eae4;
+    line-height:20px;
+	}
+.eddie {
+	float: right;
+	padding: 15px 20px 15px 20px;
+	}
+.jshowoff p.jshowoff-slidelinks {
+	position: absolute;
+    display:table;
+    width:100%;
+	top:-66px;
+	right: 0px;
+	margin: 0;
+	padding: 0;
+	}
+.jshowoff-slidelinks a, .jshowoff-controls a {
+	display: table-cell;
+    width:25%;
+    text-align:center;
+    vertical-align:middle;
+    height: 28px;
+    text-decoration:none;
+	color: #b8d3c3;
+	outline: 1px solid #e3eae4;
+	font: 14px 'DINPro-light';
+	}
+.jshowoff-slidelinks a:hover {
+	background-color: #e3eae4;
+    color:#003829;
+	}
+.jshowoff-slidelinks a.jshowoff-active, .jshowoff-slidelinks a.jshowoff-active:hover {
+	background-color: #e3eae4;
+    color:#003829;
+	}
+#panel {
+    display:inline-block;
+    position: absolute;
+    top:180px;
+    left:250px;
+    z-index:10;
+}
+p.jshowoff-controls {
+    display:none;
+	overflow: auto;
+	margin: 0 0 0 27px;
+	}
+#panel a {
+    display:inline-block;
+    outline:none;
+    width:6px;
+    height:11px;
+	margin:5px 14px 0 0;
+	}
+#panel  .jshowoff-prev {
+    background: url(../img/back.png) no-repeat;
+ }
+#panel  .jshowoff-next {
+    background: url(../img/forw.png) no-repeat;
+ }
